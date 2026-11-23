@@ -7,7 +7,7 @@ App site induk `turbojet_control` belum dibuat.
 
 | Bagian | Lokasi | Status |
 | --- | --- | --- |
-| Engine (runner, kontrak berkas v1, CSV bertahap, encoding, potongan sadar kutip) | `turbojet/engine/` | Jalan, 25 tes lulus |
+| Engine (runner, kontrak berkas v1, CSV bertahap, encoding, potongan sadar kutip) | `turbojet/engine/` | Jalan, 59 tes lulus (jalur Rust dan Python, Windows dan Linux) |
 | Operasi rujukan `group_sum` (target port Rust) dan `preview` | `turbojet/engine/ops/` | Jalan |
 | DocType: Plan (+Limit), Settings, Quota Balance, Usage Entry, Job, Idempotency Key | `turbojet/turbojet/doctype/` | Sintaks valid, belum dipasang ke bench |
 | Hak paket, buku kuota (`FOR UPDATE`), idempotensi, siklus job (lease + fencing, heartbeat, retry, penyapu) | `turbojet/services/` | Sintaks valid, belum diuji di Frappe |
