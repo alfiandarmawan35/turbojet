@@ -1,0 +1,97 @@
+{
+  "schema": "rust-anything/bridge@1",
+  "root": "C:\\Users\\alfian\\Documents\\addons odoo\\addons_sbi\\turbojet",
+  "unit": "turbojet/engine/ops/",
+  "language": "python",
+  "kind": "pyo3",
+  "crate_name": "ops-rs",
+  "exports": [
+    {
+      "name": "aggregate_chunk",
+      "file": "turbojet/engine/ops/group_sum.py",
+      "line": 45,
+      "params": [
+        {
+          "name": "chunk_text",
+          "ts_type": "string",
+          "optional": false,
+          "rest": false
+        },
+        {
+          "name": "options_json",
+          "ts_type": "string",
+          "optional": false,
+          "rest": false
+        },
+        {
+          "name": "first_row",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false
+        }
+      ],
+      "returns": "string",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    },
+    {
+      "name": "detect_delimiter",
+      "file": "turbojet/engine/ops/preview.py",
+      "line": 10,
+      "params": [
+        {
+          "name": "header_line",
+          "ts_type": "string",
+          "optional": false,
+          "rest": false
+        }
+      ],
+      "returns": "string",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    },
+    {
+      "name": "preview",
+      "file": "turbojet/engine/ops/preview.py",
+      "line": 23,
+      "params": [
+        {
+          "name": "head_text",
+          "ts_type": "string",
+          "optional": false,
+          "rest": false
+        },
+        {
+          "name": "max_rows",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false
+        }
+      ],
+      "returns": "string",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    }
+  ],
+  "classes": [],
+  "js_only": [
+    {
+      "name": "InvalidOptions",
+      "file": "turbojet/engine/ops/group_sum.py",
+      "line": 37,
+      "reason": "class: inherits from ValueError"
+    },
+    {
+      "name": "LimitExceeded",
+      "file": "turbojet/engine/ops/group_sum.py",
+      "line": 41,
+      "reason": "class: inherits from Exception"
+    }
+  ]
+}

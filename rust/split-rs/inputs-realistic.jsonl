@@ -1,0 +1,800 @@
+{"fn": "split_records", "args": ["😀1.000,51.000,5;\r\t\"q\nq\"", -1, false]}
+{"fn": "split_records", "args": ["\ra,;é;x,ya\"q\nq\"😀\n \r\n日本日本 1.000,5,😀,ééx,y\"éa日本日本", 3, true]}
+{"fn": "split_records", "args": ["\"q\nq\";\t1.000,5\"q\nq\" 1.000,5\r\n\t\"q\nq\"1.000,51.000,5a\r\"bc1.000,5;\t\"q\nq\"\"\"q\nq\"\r;x,y", 50, true]}
+{"fn": "split_records", "args": ["\r\n é1.000,5\"q\nq\" \t\né\r\nabc\"x,y1.000,5\"q\nq\"日本\n\r\n\"q\nq\"x,y1.000,5\"q\nq\"\tbcé😀x,y;x,y1.000,5\r\nx,y\"\"", 3, false]}
+{"fn": "split_records", "args": [",\r\n\"q\nq\"日本;\n\t\"x,ya,ax,y,\n\r;bc\r\n日本\"a😀\"q\nq\"\"\r\"q\nq\"\"1.000,5é", 0, true]}
+{"fn": "split_records", "args": ["\"é1.000,5\t \"1.000,5\n a", 0, true]}
+{"fn": "split_records", "args": ["bc日本日本a", 0, false]}
+{"fn": "split_records", "args": ["éx,y😀;\"q\nq\"x,y\"\"\"1.000,5\n\t😀x,y\r, bc\n\"\"bc", 50, false]}
+{"fn": "split_records", "args": ["x,y\n\"q\nq\"", 50, false]}
+{"fn": "split_records", "args": ["\"", 50, false]}
+{"fn": "split_records", "args": ["\"\"\"\"\" \r\n\t\t, é\"\"日本\"\"\r\nx,y\"q\nq\"\téx,y\"\"😀1.000,5\"q\nq\"x,y;1.000,51.000,5\r\n;\n\ra,", 3, false]}
+{"fn": "split_records", "args": ["\"\"a日本\"\"日本\n;\r\n\né\r\n\";\r\n;\t\"\";bc日本\"\";1.000,5😀\r\n,", 2, false]}
+{"fn": "split_records", "args": ["\r\n\r\n,a\t\r\n\tabc;", 1, true]}
+{"fn": "split_records", "args": [";日本😀x,ybc 😀", 5, true]}
+{"fn": "split_records", "args": ["\t;日本1.000,5\r\n é日本bc\taé😀é;é\t😀a😀\nbc;\"\";;bc\"1.000,5", 2, false]}
+{"fn": "split_records", "args": ["a\t\"日本\t  \r\t\r\"\"\"a \r\n\"\raa", 2, false]}
+{"fn": "split_records", "args": ["\r\n😀\",\"\"bc1.000,5\r\n😀1.000,5😀bca\r\"q\nq\"bc\r1.000,5\" 日本\r\r\n😀\n日本", 2, true]}
+{"fn": "split_records", "args": ["\"q\nq\"é\n\"\"\t\"\"q\nq\"a日本1.000,5\tbc\"\",é日本\r\n\";a\nébc  1.000,5\"\"1.000,5;", 0, true]}
+{"fn": "split_records", "args": ["😀\r\nébc\n\"\"ééé日本\" \na\"q\nq\"\t日本\"\"1.000,5a\"\"😀\"\"\"", 0, false]}
+{"fn": "split_records", "args": ["a日本,日本é\n\"\r\";😀\"q\nq\";, \r\né;日本\"q\nq\"\"q\nq\";1.000,5\r日本x,y日本,,,\"q\nq\"é", 2, false]}
+{"fn": "split_records", "args": ["\"\"😀\t1.000,5😀😀\"q\nq\" 😀\"\"\nx,y\r日本", -1, false]}
+{"fn": "split_records", "args": [" \n\"x,y\"\t\r\n😀;😀\r\nx,y\r\n\"\r\n\r😀\";\r\néx,y  a😀", 50, true]}
+{"fn": "split_records", "args": ["\"q\nq\"1.000,5\n\t日本😀", 0, false]}
+{"fn": "split_records", "args": ["a\r\n\r\n\"😀\t\"q\nq\"\"q\nq\"😀abc", -1, true]}
+{"fn": "split_records", "args": ["\r\n😀a\nx,y1.000,5\r\n", 5, false]}
+{"fn": "split_records", "args": ["\na;\"😀", 1, false]}
+{"fn": "split_records", "args": ["\"\"é,\t1.000,5\";a\r\n\tbc\"\"1.000,5", 1, false]}
+{"fn": "split_records", "args": ["😀😀日本😀\"q\nq\"\r\n\"q\nq\"😀\r\nbc\"q\nq\"\"a\"q\nq\"日本\r\nx,y\n日本\r\n1.000,5 é\nbc\t,1.000,5é\"q\nq\"", 5, true]}
+{"fn": "split_records", "args": ["1.000,5😀\"q\nq\"😀😀日本\"\",\"\"\r\n1.000,51.000,5 ;\nax,y\r\n\t1.000,51.000,5\"1.000,5\n\r\n\"q\nq\"\"😀日本 \n", 1, false]}
+{"fn": "split_records", "args": ["\"\"bcbc\r\né\"\"\"\r\n", 5, false]}
+{"fn": "split_records", "args": ["x,y\"\"\"\"bc\"\"\"\t\"q\nq\"", 5, false]}
+{"fn": "split_records", "args": ["\r1.000,5日本,x,y\t\"😀\"1.000,5bc\"q\nq\"abc;日本\r\n😀a", 1, false]}
+{"fn": "split_records", "args": ["\t\t\n\"\"\r", 1, false]}
+{"fn": "split_records", "args": ["\n日本\"\"\t\tx,y日本\néx,y\"q\nq\",\n\n;,日本\"\";\"\"\n\t\n\ta\"\r\né日本 a", 3, false]}
+{"fn": "split_records", "args": ["日本\"q\nq\"\";\"\r日本x,y bc😀\r\n,x,yx,y日本1.000,5", -1, false]}
+{"fn": "split_records", "args": ["\r\nébc,bc,", 5, false]}
+{"fn": "split_records", "args": ["; x,y\"q\nq\"a\"😀\"a; ,\"\"\r\nabc,1.000,5;😀\"é\"q\nq\"\r😀x,y\r \r1.000,5😀\tbc\"q\nq\"\r\"\"", 3, true]}
+{"fn": "split_records", "args": ["\"q\nq\" \"q\nq\"1.000,5a\"q\nq\"\n", 3, false]}
+{"fn": "split_records", "args": ["x,y\"é\r1.000,5😀\r\n\ta日本1.000,5\"\"1.000,5;日本\n,\"\"x,y ;;\t a\r\nbc\r\n\"\"1.000,5\r\n日本", 0, true]}
+{"fn": "split_records", "args": ["\n;", 3, false]}
+{"fn": "split_records", "args": ["日本x,y", -1, false]}
+{"fn": "split_records", "args": ["\n\"q\nq\"", 0, true]}
+{"fn": "split_records", "args": [",\r\n\naébc\"q\nq\"\r\n,\"\"", 5, false]}
+{"fn": "split_records", "args": ["\r\"q\nq\"bc日本\r x,y,\rbca\t ,x,y\"\"\"\"\r\"\"\n1.000,5😀 \r\n\"\"x,y,a日本,\"1.000,5\r\"q\nq\"\"😀\"\"", 3, false]}
+{"fn": "split_records", "args": ["a ,\"q\nq\"\t😀1.000,5日本", 0, false]}
+{"fn": "split_records", "args": ["a\r\n\r; \ré\"\"éaa😀\"\"x,y;\r\"q\nq\"\"\"1.000,5\"q\nq\";,\"a1.000,5é\"\t\r\nax,yé\" ax,y;", 0, true]}
+{"fn": "split_records", "args": ["x,y, \r\nx,yx,yé\r\nx,y\t\"q\nq\"é😀\"\";a\n\né ", 1, false]}
+{"fn": "split_records", "args": ["\"\";\r \"😀 \né \r\n日本x,y\r\"\"1.000,5ébc\né", 1, false]}
+{"fn": "split_records", "args": ["\"x,y \"q\nq\"bcébc1.000,5😀é\t\r1.000,5é1.000,5日本日本 1.000,5\ra\t1.000,5\t 日本\r 日本a;\r\n\"\"\"q\nq\" \"q\nq\"", -1, true]}
+{"fn": "split_records", "args": ["\n日本a,;;\n ;x,y日本1.000,5;\t\r😀éa;,😀\"x,y\t;;\n\"q\nq\"😀\"\";,", 2, true]}
+{"fn": "split_records", "args": ["x,y;\t\",ax,y\t,x,y\"q\nq\"bcx,y\"q\nq\"日本;bc\t\"\"\t,\r\n1.000,5\r\t;日本\"\"", 0, false]}
+{"fn": "split_records", "args": ["é\r\n\t;\r日本,\t,\r\n😀\té\r1.000,5\"\"1.000,5\t\r\nbc\r\n1.000,5x,yé\t\r\n\nx,y\"\"日本1.000,5é\r\né;\ra\n", 5, false]}
+{"fn": "split_records", "args": [";😀 \tx,y ;日本\tx,y😀 日本a日本 日本\r\n\"q\nq\"a", 2, true]}
+{"fn": "split_records", "args": ["aé", 5, false]}
+{"fn": "split_records", "args": [";😀\t", 2, true]}
+{"fn": "split_records", "args": ["a\n\nbc,\r\"\"bc日本x,y;1.000,5bcé\";", -1, true]}
+{"fn": "split_records", "args": [",;, bc\"x,y", -1, false]}
+{"fn": "split_records", "args": ["é", 3, false]}
+{"fn": "split_records", "args": ["x,y\nbc\té\"\r\n\"\" bc,x,y\t\"q\nq\"x,y\"aé;\"\t\n\r\nx,y1.000,5\"\n😀\"\"éa;\nx,y ", 0, true]}
+{"fn": "split_records", "args": ["a日本,\r\n", 5, true]}
+{"fn": "split_records", "args": ["\r\n,é;,\rx,y日本\"\"\"\"\n\r\n; \r\n\"q\nq\"日本\n\n\"\"", 2, true]}
+{"fn": "split_records", "args": ["\"ébc日本\r\r\n\"q\nq\"bcé\"\r\nx,y ;\né;\r\n\t,\"q\nq\"😀éé\"bc,é\t,\n\naa😀\na😀", 0, true]}
+{"fn": "split_records", "args": ["\t😀\rbc日本\"q\nq\"\"q\nq\"\tbc😀日本\n\r\n1.000,5日本 ,a\tx,ybcbc\"q\nq\"\"\"q\nq\" ;日本;\r\n;\r\t", 1, false]}
+{"fn": "split_records", "args": ["\nx,ya;bc1.000,5\"q\nq\"日本\"\" \"\né\"\"é\té", 3, false]}
+{"fn": "split_records", "args": ["\t\n,  日本\n\"q\nq\"\r\n😀\r😀,\n\r\n\"\",x,y\"\"\r\ré\tx,yx,ybc\r\né,bc\r\nx,y😀, ", 5, false]}
+{"fn": "split_records", "args": ["\t,;\r\n;bc1.000,5\"\r😀😀\r\r\n\r\naé\"\"\r\n\"q\nq\"\r\n", 3, false]}
+{"fn": "split_records", "args": ["\"\r\n\r\n ", 0, true]}
+{"fn": "split_records", "args": ["日本 aa,", 0, false]}
+{"fn": "split_records", "args": ["😀\"", 0, true]}
+{"fn": "split_records", "args": ["a;x,y", -1, true]}
+{"fn": "split_records", "args": ["\"\"q\nq\"\n\rbc日本x,ybc\nbcé1.000,51.000,5\"q\nq\"x,y1.000,5;\t ,;é \r日本,,a\"\"a\r1.000,5\rbcbcéa\n", 0, false]}
+{"fn": "split_records", "args": ["\"\" \nx,y,\t\"q\nq\";😀日本\"\"\rbc,\"\tx,ybc1.000,5", 50, true]}
+{"fn": "split_records", "args": ["x,y\"q\nq\"a😀\"q\nq\"\"\"\"\"\n1.000,5", 0, false]}
+{"fn": "split_records", "args": ["\n\"q\nq\"bc\"\"q\nq\";1.000,5\t;日本;\"", -1, false]}
+{"fn": "split_records", "args": [";é\"q\nq\"a \"q\nq\"😀😀\r\n😀bc\t \r😀; \"q\nq\"\t1.000,5\"😀x,y\n\r\n,\"\r\n;x,y\"\" \r\n\r\t \"1.000,5", -1, true]}
+{"fn": "split_records", "args": ["\"\"", 0, false]}
+{"fn": "split_records", "args": ["é\"\"aé\" \"\"", 5, true]}
+{"fn": "split_records", "args": ["a日本bc bc;1.000,5x,yaé;😀;x,ybc;\r\r\"😀\"\" 日本\t\n\"q\nq\"1.000,5\"x,y", 3, false]}
+{"fn": "split_records", "args": ["\"; ;\"\";\n1.000,5日本 bcx,ybca\"\"\"\n  😀\n\r\n\r\"\"q\nq\"é 😀😀bc,\n", -1, false]}
+{"fn": "split_records", "args": [";bcbc\t\n\"q\nq\",\"q\nq\",;\"\"\r\n\r\r日本,\t😀日本bc\ta;", 2, true]}
+{"fn": "split_records", "args": [" ,bc\na\"", 1, true]}
+{"fn": "split_records", "args": [";日本\"\"a日本;,\r\n\"\r\n", -1, true]}
+{"fn": "split_records", "args": ["\né;a1.000,5\"\n1.000,5 ,\r日本\";\"\"\"\"\"\n1.000,5 \n\"q\nq\"x,y\"q\nq\" bcéa日本é\"\"é", -1, true]}
+{"fn": "split_records", "args": ["é\"\r\n\"x,y\t\r\n,\"\"\"q\nq\"é\r\nx,y  bc\r\nx,y,\r", 5, true]}
+{"fn": "split_records", "args": ["日本😀a", 2, false]}
+{"fn": "split_records", "args": ["x,ya\tbc😀\t\r\n\r\r\n1.000,5x,y\"\" \"q\nq\"x,y;a é\r\né ", -1, false]}
+{"fn": "split_records", "args": ["\rx,y", 1, true]}
+{"fn": "split_records", "args": ["\r\"\t a\"q\nq\"😀 1.000,5 日本,\tébc\"q\nq\"1.000,5\"\"bc\r\t\"\"\"\"bcx,y\t", 5, true]}
+{"fn": "split_records", "args": ["\"q\nq\",;aa1.000,5\"q\nq\"\taa\"\"1.000,5\"\"\"a\"q\nq\"a,\t\"1.000,5\r\né\"\"\"q\nq\"1.000,5\"bc \"\r\n\r\n\n,x,yx,y\r\n\t ", 2, true]}
+{"fn": "split_records", "args": [";\t\"q\nq\"x,yx,y\"\",é,日本\néé", 3, false]}
+{"fn": "split_records", "args": [" x,y\"日本\"\",bc\n\n\"\",\"\t 1.000,5\t\"\"\"\"x,y,\r1.000,5\n;\"\"\r\n\"q\nq\",日本a\"日本\"\"\"bc\"q\nq\"é\"\"", 2, true]}
+{"fn": "split_records", "args": ["\"q\nq\"1.000,5\n\"q\nq\";\"q\nq\" \né😀\"\tbc\t\r\n😀a,,é", 2, false]}
+{"fn": "split_records", "args": ["\tbc\t日本é😀bcax,y\r\n1.000,5😀;é;a;\n", -1, true]}
+{"fn": "split_records", "args": ["\tbc\r\na\nx,y1.000,5,😀\t,a,bc;😀é\r\né ,日本;", 2, false]}
+{"fn": "split_records", "args": ["\r\",bc\"\"日本ébc\"\",1.000,5bcé😀\r,é\"\"\r\"q\nq\"\r\n", 50, true]}
+{"fn": "split_records", "args": ["x,y😀;\t1.000,5😀é\"\r\nx,yé\r\n1.000,5a😀\r\n1.000,5bc 日本日本1.000,5日本\t\"😀\"\"\r\n😀\t,1.000,5\t\n\r\na", 50, true]}
+{"fn": "split_records", "args": ["\n日本\"q\nq\"日本a", 3, false]}
+{"fn": "split_records", "args": ["\"\"\t ;é\n\r,x,y,\r\n\ra\"q\nq\"\r\nx,yx,yx,y", 3, true]}
+{"fn": "split_records", "args": ["1.000,5 ,aé\r\n,1.000,5\t,\r\r\nbc\t😀\t\r;\r\n\n日本\r\n ;1.000,5bcx,y日本 x,y;\"q\nq\"\"\r\n ", 3, true]}
+{"fn": "split_records", "args": ["\"a\"\"1.000,5\r\n😀\"😀a\"\"", 50, true]}
+{"fn": "split_records", "args": ["x,y,\"q\nq\" 1.000,51.000,5\"q\nq\"1.000,5\r\n ;\"q\nq\"x,y日本😀\"q\nq\"😀\t\ta日本日本é1.000,5\n\t\"q\nq\"bc\"q\nq\"", 5, true]}
+{"fn": "split_records", "args": [" \"\"\r\né", 5, true]}
+{"fn": "split_records", "args": ["x,y\r\n1.000,5\n\t\r\nbc\n\"a,,x,y\"\"\"bc\n😀x,y😀bc😀1.000,5bc\"q\nq\"\"q\nq\"x,y1.000,5😀é日本", 3, false]}
+{"fn": "split_records", "args": [";", -1, true]}
+{"fn": "split_records", "args": ["\"\"\n1.000,5\n\"x,y,\"q\nq\"\r\n😀;\r\n\n😀;;😀\n\"q\nq\"1.000,5x,y\n  \"q\nq\"é\"q\nq\",éx,y\n\"\r,\"\"\r\n", 2, true]}
+{"fn": "split_records", "args": ["\"q\nq\"\"q\nq\";\r\"\"x,y\r\n\r\naé\rbc\t\r\n\"\"1.000,5\"\"é\n;é\n\n😀,1.000,5\n1.000,5;é😀\"q\nq\"éé,", -1, false]}
+{"fn": "split_records", "args": ["  \"\"\"q\nq\",\"日本\"aé\" 日本,, \"\" 😀\r日本bc\"\"\"q\nq\",bc日本\" 日本é\ta😀", 2, true]}
+{"fn": "split_records", "args": ["\rbcabcx,y,é 😀日本😀x,y\"\"\"\"\n\r\n1.000,51.000,5\rbc\"\"\" 😀\r\nbc1.000,51.000,5\"\"\r\r1.000,5", -1, true]}
+{"fn": "split_records", "args": ["", -1, false]}
+{"fn": "split_records", "args": ["a\t;\"\"x,y日本😀\r😀é\r\r\né\"q\nq\"\r\né日本,😀日本\n\"\",x,ybc\n\t,\nx,y\na\rx,y日本\"", -1, false]}
+{"fn": "split_records", "args": ["a😀\"q\nq\"1.000,5\tbc😀;\n\"q\nq\" ;\"😀\r\"\"😀\"q\nq\"😀\rx,ybc\"q\nq\"\na1.000,5abc \"\"x,yx,y", 1, true]}
+{"fn": "split_records", "args": ["\r\n😀\"\"\"q\nq\"é\r\ta\r\n\n;bcé;\"q\nq\"\"\" ", 0, true]}
+{"fn": "split_records", "args": ["\"\"😀;😀\", 😀", 3, true]}
+{"fn": "split_records", "args": ["\"\ta日本,1.000,51.000,5日本\n1.000,5\r\"\"ax,y\"q\nq\"bc;\r,x,y😀\"q\nq\"", 0, false]}
+{"fn": "split_records", "args": ["bc;  \"q\nq\" é\r\nx,yx,y1.000,5\r\"q\nq\"\t1.000,5;x,yx,y\tbc\né\"\n", 3, true]}
+{"fn": "split_records", "args": ["\t bc\"\"\t\rx,y😀\r\nx,y\r\n;😀é\"q\nq\"\"q\nq\"\n\n\nx,yé\r\t \naé\r\n ;,;1.000,5\r\n;", 3, false]}
+{"fn": "split_records", "args": ["😀éa", 50, false]}
+{"fn": "split_records", "args": [";日本\n\"\";\t1.000,5\"q\nq\"ax,y1.000,5é\r\n\n,x,y\r\t\"q\nq\"", 2, true]}
+{"fn": "split_records", "args": ["\"q\nq\"\"\"日本日本😀\t😀;x,yé\"q\nq\"", 1, false]}
+{"fn": "split_records", "args": ["bc,", 1, true]}
+{"fn": "split_records", "args": ["  \"\"x,yx,y\n\tx,y\t \t", 5, true]}
+{"fn": "split_records", "args": ["\"q\nq\"\n,\t\r\n;1.000,5\r\na\n\"q\nq\"x,yé \"\"\"é日本abc\r\nx,y;é", 50, false]}
+{"fn": "split_records", "args": ["a\"q\nq\"\"\"\t日本日本bcé\n\"q\nq\"\r\néa\"日本\"\";\tbc\"q\nq\"\t\r\t😀\n日本;bcé\"q\nq\"bc1.000,5x,y\t,", 50, true]}
+{"fn": "split_records", "args": ["bc\r\n\"q\nq\"; \"\"\" \"\"é\"\";x,yax,y1.000,5\"q\nq\"é😀\r\n\"", 5, false]}
+{"fn": "split_records", "args": ["😀\"\"\"\"😀a\r\n\r😀,x,y\tbc\r\n\né", 1, false]}
+{"fn": "split_records", "args": ["\", \n😀 1.000,5;\t\"\",a\r\n1.000,5;bc\r😀\"\"é\"q\nq\"1.000,5x,y日本\nbcbc日本", 0, true]}
+{"fn": "split_records", "args": ["\"q\nq\"x,y日本x,yé1.000,5\"q\nq\",bc,a1.000,5;bc\"\n\"bc\nbc\t日本\r\n\"q\nq\"\"q\nq\",\"\r\"q\nq\"\t\"\"\"q\nq\"\"\"bc\r\n日本\r\n,", 3, true]}
+{"fn": "split_records", "args": [";\r\né\n\nx,y abc,\"\",\"\"bc  \t;\"a😀😀\r\"\"😀a\"q\nq\"bc,\r\n\t日本x,y\t", 0, true]}
+{"fn": "split_records", "args": ["日本\"\r\n,\n;;\r\n \"\"bc\n\"\"😀1.000,5\r\"\"q\nq\"; \n\n\"😀;bcbc", 1, false]}
+{"fn": "split_records", "args": ["\"\"éé\"\";\r\n\r;\r😀\"q\nq\"\"q\nq\"\";a\r😀x,y ;😀\nbc😀日本\";;,;\t1.000,5\"q\nq\"\"😀\r\nbc;😀", 3, true]}
+{"fn": "split_records", "args": ["\t;,\"\";;", 3, false]}
+{"fn": "split_records", "args": ["日本日本\r\n,😀\"q\nq\"bc1.000,5\n\r\na\ré\ré,;a", 3, true]}
+{"fn": "split_records", "args": ["\"q\nq\"\r\n\"bcéaé,1.000,5a日本\r😀bc,;", -1, false]}
+{"fn": "split_records", "args": ["😀\"bcbc\ré 1.000,5\r\n\"a\nébcx,y é;日本\"é\"q\nq\"x,ya", 2, true]}
+{"fn": "split_records", "args": ["😀 \"bcbc;;ax,y😀\rbc\"q\nq\"aa;日本\n\"q\nq\";a;x,y\"", 3, true]}
+{"fn": "split_records", "args": ["\"\"\"é😀ébc\r\n日本\"\r,\n,\naa\"\t\r\n\r\nbc;1.000,5\t😀\n bc ", -1, true]}
+{"fn": "split_records", "args": ["\n\"\"\r\n 日本\t\"q\nq\"", 5, false]}
+{"fn": "split_records", "args": ["x,y\r\n\té\r\"", 0, false]}
+{"fn": "split_records", "args": ["x,y\"😀\"q\nq\"😀日本bcbcbc\rbc\né日本\r\n\r😀\"x,y😀bc\"q\nq\"x,yx,y\n\r\n\r\na日本;é", 50, true]}
+{"fn": "split_records", "args": ["😀 \r\n,bc\n", 50, true]}
+{"fn": "split_records", "args": ["\"q\nq\"😀", 0, true]}
+{"fn": "split_records", "args": ["a1.000,5😀\tbc\r \ré日本é\t\"\t1.000,5😀x,y\";\nbc日本;\t;\tx,y 😀a😀\"\t😀,", 50, true]}
+{"fn": "split_records", "args": ["\r\t 日本\n1.000,5 é\"\n\"q\nq\"\t1.000,5😀", -1, false]}
+{"fn": "split_records", "args": ["é\"\"q\nq\"😀日本 bc\n\r\n\tbc\"\"\n", 3, false]}
+{"fn": "split_records", "args": [" ,\r;\"q\nq\"😀\"q\nq\",bc\r\n\"\"\r\n;1.000,5\r\n\"q\nq\"1.000,5日本😀\"\"\"1.000,5😀\n😀1.000,5\n\"\"\" \n;bc😀;,x,ya", 50, true]}
+{"fn": "split_records", "args": ["日本\",\t\"\",\r\n\r\n\t;\r\r\n\n😀 😀\r\n\t\"bc日本😀\r\n😀1.000,5\t\r\n\"\"\r ", 0, true]}
+{"fn": "split_records", "args": ["😀1.000,5  é😀ax,y,\n日本", 1, false]}
+{"fn": "split_records", "args": ["\r  \r x,ybcbc\té;x,y\r日本\té1.000,5日本\"", 3, false]}
+{"fn": "split_records", "args": [";1.000,5,\"a\t\r\n,\"q\nq\",;aa😀\"\r\nabcx,y😀;\r\n\"\ra\"\"é,aaébc😀", 3, false]}
+{"fn": "split_records", "args": ["é1.000,5 a\"q\nq\", \r\n x,y1.000,5\r;1.000,5\r\n日本\r;", 2, true]}
+{"fn": "split_records", "args": ["", 1, true]}
+{"fn": "split_records", "args": [",\"\",;\"q\nq\"éa日本😀\r\n😀\"aé\"\"bc\r\n\t\"q\nq\"", 5, false]}
+{"fn": "split_records", "args": [";\"😀;", 50, false]}
+{"fn": "split_records", "args": ["x,y\r\n1.000,5 \r\nbc\"\" \"q\nq\";\t\r\n,\t1.000,5日本\ta\rbcx,y\r\n1.000,5,\"q\nq\"😀,bca日本", 2, true]}
+{"fn": "split_records", "args": [" 😀é ,日本\"q\nq\"\n\r\n1.000,5;\n\"x,y1.000,5😀\n;\"\" \r\r\nx,y  a\r\nbc;\r\n1.000,5\t,\"\"\r\n,日本x,y", 2, true]}
+{"fn": "split_records", "args": ["bc\n\"\"\"q\nq\"bc\t1.000,5\r\r\n;bc\r\"\"\"q\nq\",\"\"q\nq\"\"\"\r\n\r\"\"1.000,5 1.000,5\t\"q\nq\"bc\r \r\n\"\"q\nq\"bc", 2, true]}
+{"fn": "split_records", "args": ["😀\r\na,😀a\"q\nq\"\r\"\"\"\r;;\n,\"q\nq\"bcbc日本\"q\nq\"", -1, false]}
+{"fn": "split_records", "args": [";\t\t\n;\r\n日本a\n\r\n\"\"\naéa😀é,1.000,5x,y\r日本\"\"é\t\n,\"\",\"x,y", 50, false]}
+{"fn": "split_records", "args": ["\"\"\t\"\"\"q\nq\"bc,,\"q\nq\"\"q\nq\"\r\n\r\n\t日本;\"\"\"\"\"\"日本\"q\nq\"bc1.000,5,x,y\r \"\",1.000,5\r\n;😀😀\r\n1.000,5\taa", 50, false]}
+{"fn": "split_records", "args": ["\"\"\"\"\n\"\"\r\n😀\t😀a", 2, true]}
+{"fn": "split_records", "args": ["é\"😀\r;\"\"a;é;\"\r\n\n\"\",é", 2, true]}
+{"fn": "split_records", "args": ["😀\n\n1.000,5\"\n\"\"1.000,5\r\"q\nq\"\"q\nq\"é1.000,5日本bc,\"\"\"\"1.000,5\"\"\"\"1.000,5ébc", 3, false]}
+{"fn": "split_records", "args": ["a\r\n\t😀\"\"\rbc\n😀a😀😀\r\n", 3, false]}
+{"fn": "split_records", "args": ["é日本\r\n\r\n\ra1.000,5é;\téé,\n\"\"ax,y\t日本\r \r\n bcé1.000,51.000,5\t,\"q\nq\"\r\nbc\r\n", 0, false]}
+{"fn": "split_records", "args": [" bc\t日本\r\n\"\t1.000,5,\"q\nq\"\n日本\r; ;x,y😀", 5, true]}
+{"fn": "split_records", "args": ["bc\ta\"\",\r\n;,;\r\n日本\r\né😀\"q\nq\";,\téx,y", 1, true]}
+{"fn": "split_records", "args": [" \r\n\n\"\"1.000,5é\r\n\r\n 😀\r\"q\nq\"a😀aa \"a;\n;é;\"\r\"日本bc,\"q\nq\"1.000,5\r\" ", 50, false]}
+{"fn": "split_records", "args": [" x,y ébc\"q\nq\" ,\ré\"\"a", 3, false]}
+{"fn": "split_records", "args": ["\r\n; 日本😀\"q\nq\"\"1.000,5日本\r\n\"q\nq\" \t\"q\nq\"x,y \r\r\n\r\n1.000,5;a\"\"\n\r日本,\t\r日本éé\t\r\n\r\n\n", 1, false]}
+{"fn": "split_records", "args": ["é\ra\rbc\r\né;\"q\nq\"\r日本\"q\nq\"\"\"a\"q\nq\";a,\n \"\"\"q\nq\"a\nbcé ,1.000,5\t\té,😀日本\n\t", -1, false]}
+{"fn": "split_records", "args": ["😀é\"\"\tébc1.000,5 \"\";😀é", 3, false]}
+{"fn": "split_records", "args": ["\"\"q\nq\"é \"\"", 0, true]}
+{"fn": "split_records", "args": ["1.000,5😀1.000,5日本,a1.000,5\"", 5, true]}
+{"fn": "split_records", "args": ["\r\n\r😀é;é\t日本\"😀1.000,5\n\"\"\r\n\r\t\r,é\"q\nq\"", -1, true]}
+{"fn": "split_records", "args": ["\r\n\"\"\r\n,😀1.000,51.000,5,,a \r\"q\nq\"\"q\nq\";,x,y\"é\"日本 \r\n\r\n日本\r\n日本日本\t\"\"ax,y\n", -1, false]}
+{"fn": "split_records", "args": ["x,y\r\n😀\"\tbc\"\r\"\"😀\n😀", 0, false]}
+{"fn": "split_records", "args": ["\n\r\n\"1.000,5\t\r\n é\"\"é\"\"\"q\nq\"\r\r\n\t\t\"\"a\"\"", 1, false]}
+{"fn": "split_records", "args": ["bc\"", 5, false]}
+{"fn": "split_records", "args": [",😀é\"q\nq\"1.000,5日本bcé\"\",a\nx,yx,y1.000,5日本\"q\nq\"\r\"x,y,abc;x,y;😀é\t1.000,5\n日本bcéa", 50, true]}
+{"fn": "split_records", "args": ["x,y\"日本\"\r\na\t\t\ra\r\"q\nq\"é\r\n😀\n,a日本1.000,5,\né,\"q\nq\"bc\r,\n\t\"é\r", 1, true]}
+{"fn": "split_records", "args": ["a\nbc日本x,y \r\nx,y日本日本\"q\nq\"\"q\nq\"a\"😀\"\r\n,\n\"\r\n1.000,5\n", -1, false]}
+{"fn": "split_records", "args": ["bcx,y1.000,5\né\"é;日本\r\n\t1.000,5\"\"x,y1.000,5\"\"日本日本é", 0, true]}
+{"fn": "split_records", "args": ["\n\"q\nq\"\r\naa\"ébcéébc\"q\nq\"\r\n;,\n\"q\nq\"é,😀a😀a;\"q\nq\",é;", 50, true]}
+{"fn": "split_records", "args": ["bc,\r\n\r\né\"\"😀日本\"\t\r\n;\t\nx,ybc\r\té\"😀", 50, false]}
+{"fn": "split_records", "args": ["\"\"日本1.000,5é\"q\nq\"bc\"\"\t😀é\r\"\r\n😀;日本日本\"q\nq\" bc\r\n \r\n\"\"\"q\nq\"x,y日本;", 2, true]}
+{"fn": "split_records", "args": ["\r\n\"q\nq\"\"\"\"q\nq\"x,y1.000,5日本\r\"\"\t日本;\r日本a1.000,5é\"q\nq\"\"\"\r1.000,5x,y\r\n日本日本\ré\n", 0, true]}
+{"fn": "split_records", "args": ["😀bc\"\"\"\"\"q\nq\"\"q\nq\"x,yx,y 😀 日本日本éx,y\"\"\"\"日本\tx,y\"", 0, false]}
+{"fn": "split_records", "args": ["\"q\nq\"a,\"日本bc\"\n\n😀;x,y\"q\nq\" x,yé日本 😀abc,1.000,5日本\n\"q\nq\" ,;,,\"\"x,y", 5, false]}
+{"fn": "split_records", "args": ["😀\r;;\n", 0, true]}
+{"fn": "split_records", "args": [";\"q\nq\"\t日本 ;bcbc \t\"\"\n\ré😀😀,\"\"x,y\"\"bc\na\"\r\"😀\"q\nq\"bc", 5, false]}
+{"fn": "split_records", "args": ["éa\"q\nq\"\r\nax,y\"q\nq\"\"\"1.000,5\"😀x,y\"\n\"q\nq\"\n\r,\", a,\n\r\naé日本", 3, true]}
+{"fn": "split_records", "args": ["1.000,51.000,5日本\r\n\"q\nq\"bc \"q\nq\"x,y1.000,5a日本x,y \r\n;bcbc\néx,y\t\"日本\t;日本", 0, true]}
+{"fn": "split_records", "args": ["ax,y😀x,y\"\"; \"é\n\t x,y\r\n😀\n\"q\nq\"bc\t\"q\nq\"", 1, false]}
+{"fn": "split_records", "args": ["é\"q\nq\"", 1, false]}
+{"fn": "split_records", "args": ["\"q\nq\"\ta\n\"q\nq\"\"\r\n \nx,y\t\"q\nq\"\rx,y1.000,5😀\na\r\n\"\"\"q\nq\"\"q\nq\"\"bc\"\"\"\t\r\n", 0, false]}
+{"fn": "split_records", "args": ["😀,\"q\nq\"bcé\n日本日本 1.000,5\r1.000,5", -1, false]}
+{"fn": "split_records", "args": ["a", 0, false]}
+{"fn": "split_records", "args": ["\"日本bca\t", 50, true]}
+{"fn": "split_records", "args": ["\"", 5, true]}
+{"fn": "split_records", "args": [" é\";;日本\" \r😀\"\"\r;bc \r\nbc\"q\nq\"\r\"q\nq\"\r\n\"bc ;x,y\t\tx,y日本\"\"日本", 5, true]}
+{"fn": "split_records", "args": ["\"q\nq\" \r\n,,😀", 3, true]}
+{"fn": "split_records", "args": ["\r;;日本日本;\" \"\r\n\t😀\r\r\"q\nq\"日本\"\"a\"q\nq\"x,y\"q\nq\"\"q\nq\"\"", 5, false]}
+{"fn": "split_records", "args": ["bc \"\"bc😀\r\r\n😀\r\n", 3, true]}
+{"fn": "split_records", "args": [";,\"\"日本", 50, true]}
+{"fn": "split_records", "args": ["ax,y\n日本é\"\",\"a1.000,5bc\n\n\r\"\r, \"q\nq\"bc\"q\nq\"\r\n\r\nbc", 0, false]}
+{"fn": "split_records", "args": ["😀\"q\nq\"a\"\"\r\nbcaé\"\"\r1.000,5x,y\tx,y\t\rébc\ta, \r\nx,y\"1.000,5\"q\nq\"abc日本\"😀\t😀", 3, true]}
+{"fn": "split_records", "args": ["\"😀é;😀\nx,y\r\n,\r\"q\nq\",bc\"\"\r\r\"\"a\"q\nq\";;\t ", 2, false]}
+{"fn": "split_records", "args": ["\"\"\t\ta\néa aa\r\n,\r\"😀1.000,5\"\"q\nq\"😀1.000,5,\r\n\"q\nq\"1.000,5\ré\"日本 ", 3, false]}
+{"fn": "split_records", "args": ["日本\n😀bc\n日本, ;a1.000,5😀1.000,5\"q\nq\"1.000,5;;😀1.000,5日本\tbc日本\"\"", 1, true]}
+{"fn": "split_records", "args": ["bc\r\nbc\"\t\r\n\r\n😀é;é日本a😀\r\n\nbc\r\na\n\"\"1.000,5\n\"\"\t x,y日本", 3, false]}
+{"fn": "split_records", "args": ["x,y;;\"\n日本\";\"q\nq\"bc\t日本 \r\né", 50, false]}
+{"fn": "split_records", "args": [";😀1.000,5 ,😀\n\"q\nq\"😀\tx,y\"\"\"\r\n\"q\nq\"\r\na\"q\nq\";1.000,5bc,;\"\"bc\r;;ébcé\"\r\t; ", 50, true]}
+{"fn": "split_records", "args": [",😀\n\"\"\r\"x,yé\"q\nq\"\r\né😀\"q\nq\"1.000,5\tbc\r\n \"\"x,y\"\";1.000,5é\n1.000,5\t,日本", 0, false]}
+{"fn": "split_records", "args": [";x,y\";é\t日本ébcx,y\"\";;\"\"日本,\rbcbc,\"\"😀\ré1.000,5😀", 0, false]}
+{"fn": "split_records", "args": ["", 5, false]}
+{"fn": "split_records", "args": ["\"\"日本\"q\nq\"a\"\";,\"q\nq\"\r\n\t\r😀日本日本 😀é ébc\"\"😀😀\r\n1.000,5", 3, false]}
+{"fn": "split_records", "args": ["\"é日本\"q\nq\"\r\"\";\r\n\"q\nq\"😀日本\r;\rbc1.000,5\t,\",,\n;", 3, true]}
+{"fn": "split_records", "args": ["\t1.000,5;\n\t\r\n;\nébc,\téa日本bc,,\t日本\r😀\r\na日本a\"😀\"😀 😀\r\nbc😀😀", 2, true]}
+{"fn": "split_records", "args": ["\n\r日本日本\n😀;bc日本😀😀\"q\nq\"\r\n\"\"\r\n\"日本 \"q\nq\";bc\r\n\",a", 2, false]}
+{"fn": "split_records", "args": [";x,y\r\n\n1.000,5\r\n1.000,5x,y;\r\n日本\"q\nq\"\"q\nq\" bc\"q\nq\"\rbc\";\t日本\"\t1.000,5 a日本\"bcbc", 1, true]}
+{"fn": "split_records", "args": ["\"q\nq\";éé,\n\r\n😀\r\nbcx,y\r\n\n", -1, true]}
+{"fn": "split_records", "args": ["\n\r\n1.000,5\"\"q\nq\"😀,\"\"\"\"\";bc\r\nx,y1.000,5a日本x,y\r 日本x,yaa\n\r\n\"q\nq\";bc\"q\nq\"\"日本a;,,", 50, true]}
+{"fn": "split_records", "args": ["\r,x,y\r\"\";\né\r\n\"\"\r\"q\nq\"😀\r\na ;\"q\nq\",\t;x,yabcéx,y", 2, false]}
+{"fn": "split_records", "args": ["😀bc ,bc,1.000,5,\"q\nq\"\"\"\" 日本é\n\r\n,\r\n\t日本日本\té\n 日本;\r\n\ré ;\na ", 1, true]}
+{"fn": "split_records", "args": ["\"q\nq\"abc;x,y\"\" ,\"q\nq\";x,y日本日本1.000,5\tbcx,ya\r\né;éa\r😀\"\"\"日本\"\" ", -1, true]}
+{"fn": "split_records", "args": ["日本\r\nbc;x,y,a日本\"\"😀;\r\n\"😀,bc日本x,ybc\r\n\n\nx,yx,y\r\n\r\"\"", 5, false]}
+{"fn": "split_records", "args": ["\ré\"q\nq\"\"\"\"\"a\n \"\"q\nq\"\r\nbcx,y\r1.000,5\t \r\r\n\t\"\"éa;1.000,51.000,5 \"q\nq\",aa;\tx,y", -1, false]}
+{"fn": "split_records", "args": [",日本\"\"\"\";\r \"q\nq\"\t", 2, true]}
+{"fn": "split_records", "args": ["😀1.000,5bc😀\r\na\r\n日本a,é\r\nééa\"\"aa1.000,5\t\"bc\"\ré\"\r\n\"\t\rbc,a\"\"", 2, true]}
+{"fn": "split_records", "args": ["1.000,5😀\"\"1.000,5\"q\nq\"\"q\nq\",\"q\nq\"x,y\",,a日本\na\ra,\rbcéax,y\r\n\tbc,\n\"日本\r日本\"q\nq\"x,y\n", 1, false]}
+{"fn": "split_records", "args": ["  ;\"q\nq\"1.000,5x,y\tx,y日本a\r\n 😀\",\" 😀bca\t\"1.000,5😀é\n\"q\nq\"日本,\r\n日本\";\"\"\t", 5, true]}
+{"fn": "split_records", "args": ["\n日本, a\"\r\r\r\"\"\"😀bc\r\"\"q\nq\"bcx,y\n\t,\r😀\"\"", 50, false]}
+{"fn": "split_records", "args": [";x,y\n\r\n\t\"\"日本\"\"bcbc\n\"q\nq\"bc,\r\nbc\r;a1.000,5\r\"é😀x,y😀日本 \t日本1.000,5x,y\r\na\"q\nq\" bc", 2, false]}
+{"fn": "split_records", "args": ["1.000,5\"q\nq\"\r", 1, true]}
+{"fn": "split_records", "args": ["\r;bc \r\nx,y\r\nbc\"\"a1.000,5é\r1.000,5日本\"\"😀;\n1.000,5\"\t;a\né\"q\nq\"", 0, true]}
+{"fn": "split_records", "args": ["ax,yax,y\r\n \"bc\t\r\t\r\na\r\n\t\r😀\n\ta\";\tx,y\ra\r\n1.000,5😀\"q\nq\"日本x,yébc\t", -1, false]}
+{"fn": "split_records", "args": ["\"q\nq\"😀😀\r\"\"bc😀", -1, true]}
+{"fn": "split_records", "args": [",bc\r\n😀x,y😀日本", 3, true]}
+{"fn": "split_records", "args": ["日本\r\n;1.000,5\"\"bc,\"x,yé\r日本éé;  \r1.000,5a,\"\"😀;,\"q\nq\"\"\"\r日本, \"q\nq\"\"q\nq\"\t\r\n\t😀", 50, true]}
+{"fn": "split_records", "args": [";\r\"\"bcx,y\té;x,y\n1.000,5\n,😀\r\n\t\"\nx,yé x,y 日本,", 50, false]}
+{"fn": "split_records", "args": ["\n\"q\nq\"\nbc日本1.000,5\"\"  \t ", 1, false]}
+{"fn": "split_records", "args": [" bc\"q\nq\"bcé\"q\nq\"é;1.000,5\r日本a1.000,5;\"q\nq\"bc\"", 3, true]}
+{"fn": "split_records", "args": ["\"\"x,yé日本bcé1.000,5日本日本日本bc\t\r\n日本a\n1.000,5日本\"😀1.000,5\r\n😀é\"\"\n;😀\"", 1, true]}
+{"fn": "split_records", "args": ["\n\"a😀;x,y日本日本\"\"\"\"\"\"aé日本\n \"a\naé;\"\"q\nq\"x,y\rax,y\n😀x,y\"q\nq\";", -1, true]}
+{"fn": "split_records", "args": ["\"\"\r\n1.000,5 \n\ra\"\"\"a1.000,5\"q\nq\"\r\nx,ybc,x,y\n; a\"q\nq\"\r\n;x,y", -1, true]}
+{"fn": "split_records", "args": ["😀a 日本,;\n日本\"", -1, false]}
+{"fn": "split_records", "args": [" ;a\t\r\n\n\"q\nq\"\n日本\t\"", 5, false]}
+{"fn": "split_records", "args": ["\n\"日本bc,\"q\nq\"\t日本\"q\nq\"\"\r;日本x,y\"日本日本\"\r\n;", 50, false]}
+{"fn": "split_records", "args": ["日本😀😀x,yé\"\"\r,,x,y\r\n\"\"\r\n\"😀日本日本\rx,yébcx,y,1.000,5abc\t\"\"bc日本😀\r\r\n日本\r\r\n\t\n", -1, true]}
+{"fn": "split_records", "args": ["1.000,5x,y\"\" 日本a\r日本;bc \r\n日本 ", 1, false]}
+{"fn": "split_records", "args": ["1.000,5\t\r\nabc\t\r;😀😀;a\"q\nq\"é", -1, true]}
+{"fn": "split_records", "args": ["\"x,ya日本😀日本日本\t\r\n bc😀\r\n,x,y\r\n,,;,\n\"x,y\"1.000,5é\n1.000,5,\"q\nq\";;1.000,5x,y;\r\n1.000,5\"\"", 3, false]}
+{"fn": "split_records", "args": ["\r1.000,5😀;\n\n日本日本\r\"q\nq\" x,yéa\"q\nq\"1.000,5\"\"\"\"\"\",\r\r\r\"\"\"\"\"\"bc", 1, false]}
+{"fn": "split_records", "args": [",x,y\n\"\"\"\t\r1.000,5x,yx,y\"\"😀,\n\r\"\"\r\n\n1.000,5\"\"\r;日本,\"q\nq\"", -1, true]}
+{"fn": "split_records", "args": ["bcé\n\n\nx,ya\t \taéa😀 \t\"q\nq\"1.000,5é", 1, false]}
+{"fn": "split_records", "args": ["\t", 1, false]}
+{"fn": "split_records", "args": [",1.000,5\"q\nq\",", 2, true]}
+{"fn": "split_records", "args": ["1.000,5 é\"q\nq\"1.000,5ébc,\r\nax,y\rx,y\"x,y😀😀bc ;a\r\n日本,\r\n\r\n\n\"\"\t日本日本😀1.000,51.000,5é日本é", 2, true]}
+{"fn": "split_records", "args": ["x,y\r😀x,y\né\"\"q\nq\"é", -1, false]}
+{"fn": "split_records", "args": ["😀;,1.000,5\"q\nq\" ,é\"\"a\r\n\t\"x,y;\"\"\r\né\r日本\"\",\"x,y日本;\n 日本bc\"\" \r\n;😀\"a😀", -1, true]}
+{"fn": "split_records", "args": ["\"q\nq\"\t日本a\nbc日本é,;\r\n日本 \r\n\r\"\"\tx,y\"q\nq\"\t\r,\",;;,\"\"a\t", -1, false]}
+{"fn": "split_records", "args": [",,\r日本\r\n\tbc\r\r\n\r\t\n1.000,5x,y1.000,5é\"\",\r\n\"q\nq\"x,y,\";é\"q\nq\"\"\"\nbc;é", 1, true]}
+{"fn": "split_records", "args": ["\t\"\"\"日本\"\"日本\t\"\"1.000,5😀\n x,y;x,y\n\t日本", -1, false]}
+{"fn": "split_records", "args": ["\r\n\t;;\r\n\"q\nq\";;;\t1.000,5\n,\"\"\"q\nq\"\"\"1.000,51.000,5\"q\nq\",\r\n", 50, true]}
+{"fn": "split_records", "args": [";;é\t\"\"\n😀 bc😀日本;\";\"\"x,y\r\t;\"q\nq\"\t,bc,\"é1.000,5😀a\r\r\n日本;", 1, false]}
+{"fn": "split_records", "args": ["\"q\nq\"\t\r  \r,\"\"a\r,\r\n\r\n é;,a\r\n", 2, true]}
+{"fn": "split_records", "args": ["\"日本x,y1.000,5", -1, true]}
+{"fn": "split_records", "args": [";a;\t a;bc ,\r\"\" 日本1.000,5 \ta bc日本;;\n\"\"", -1, false]}
+{"fn": "split_records", "args": ["\nbc\té😀\"q\nq\",;,😀\"q\nq\"1.000,5 \"\"x,y\r\"\";é\"\"\"日本bc \r\"q\nq\"\r\"x,y😀;éa\n\t,", 1, true]}
+{"fn": "split_records", "args": ["\t😀\r\né日本日本\n", 0, false]}
+{"fn": "split_records", "args": ["😀x,y\"a \"a\r\n\"\"1.000,5\t,", 2, true]}
+{"fn": "split_records", "args": ["bc\"\"bc😀日本;\"q\nq\"é\"q\nq\"\"q\nq\"\r\t\"q\nq\"日本\té\r\n,x,ya\"ébc", 1, false]}
+{"fn": "split_records", "args": ["\"\"\r\n\r\n\nbcbc\r\"\" \r\n\"\",", 0, false]}
+{"fn": "split_records", "args": ["x,y\t,bc😀\r\n 日本bc\"q\nq\"\t \"q\nq\"\"q\nq\",日本\r\n😀é😀日本\r", 3, true]}
+{"fn": "split_records", "args": ["\"q\nq\"\"\"a \r\n\"bc\r;éabc\"q\nq\";,日本\"é;é\t1.000,5aé\"\"日本\";", 50, false]}
+{"fn": "split_records", "args": ["\"a\"q\nq\"é😀\r😀1.000,5 \"\"\t😀日本\"\r\nbc,,\nbc ; \"", 3, true]}
+{"fn": "split_records", "args": ["\"é😀日本\"\"", 5, false]}
+{"fn": "split_records", "args": ["日本😀x,y\n\", \n日本\r\né\r\r\r\na😀😀ax,y\" \tbc\"\"\n;x,y\"\"", 0, false]}
+{"fn": "split_records", "args": ["é\r\"\"日本\"x,y\r日本\"a", 3, true]}
+{"fn": "split_records", "args": [" \"q\nq\"x,y\",\t ;\n日本", 5, true]}
+{"fn": "split_records", "args": ["bc,x,ya日本x,y\"\"a\"\"\n\"ax,y;\"q\nq\"\r\nbcbc\"bcbc\ta\"\" 😀\"\"\"\r;\t 1.000,5é1.000,5\r;\"\"", 1, false]}
+{"fn": "split_records", "args": ["é\t1.000,5😀a\"q\nq\"日本 ", 5, false]}
+{"fn": "split_records", "args": ["\"日本\t1.000,5\"\";bcx,y", 1, true]}
+{"fn": "split_records", "args": ["😀,😀日本\r\" ,éébc😀日本\r\n;😀", 1, true]}
+{"fn": "split_records", "args": ["\"q\nq\"x,y\"\"\"\r\n,\t😀\"\"\r\n1.000,5 \"q\nq\"\té,\réx,y\r\t\"q\nq\"\"", 2, true]}
+{"fn": "split_records", "args": ["\na日本\"q\nq\"1.000,5\r\n;;1.000,5x,ya\"\"\r\n\"q\nq\"\"\"\n\" \"\"q\nq\"1.000,5\r\n\r\nx,y日本,\"q\nq\"", 0, true]}
+{"fn": "split_records", "args": ["", 2, false]}
+{"fn": "split_records", "args": ["bc\t1.000,5\r\né😀bc\r\"\"é日本日本é日本x,y", 3, false]}
+{"fn": "split_records", "args": ["a\"\"\"q\nq\"\"\"😀x,y\"q\nq\"😀,é", -1, true]}
+{"fn": "split_records", "args": ["a\"\"éa\r;\n éx,ybc\r\n日本;\"", 1, true]}
+{"fn": "split_records", "args": ["\t\n\n😀x,y,\rx,y日本\t1.000,5x,y;\né\n\"\"\"q\nq\"\"\"bcé\rbc\r\"\"\";", 2, true]}
+{"fn": "split_records", "args": ["a;日本é 😀bc😀😀日本bcbc\"\"", 50, true]}
+{"fn": "split_records", "args": ["\"q\nq\"1.000,5\"\t\t\"\"😀 日本\"x,ya\rabcbc;\r\na😀;éé日本,,\t\naé\tbc😀bc\n\t", 2, false]}
+{"fn": "split_records", "args": ["; ééx,yx,y😀", 1, false]}
+{"fn": "split_records", "args": ["\r\n1.000,5\n;a\"\n;éa\n\"é😀日本x,y\"\"bc\"q\nq\" ", 2, true]}
+{"fn": "split_records", "args": ["\tbc,é,bc\n\r\n日本\"\",\r\n\r\n\"q\nq\",\",x,yx,y\"a\t\ra\ta\"\" ", 2, true]}
+{"fn": "split_records", "args": ["a \ta\"q\nq\" \r\n;\"\"q\nq\"\r\nbc\té\n1.000,5 ", 3, false]}
+{"fn": "split_records", "args": ["ééx,y\"\"\"\"a,\n\tax,y\r\"\"😀éx,ya,\"\"\r\n\"\"x,y1.000,5bc", 3, true]}
+{"fn": "split_records", "args": ["x,y1.000,5é\"q\nq\"éé日本\"é日本 x,y,1.000,5bc\n😀1.000,5é \"\"bc", 3, true]}
+{"fn": "split_records", "args": ["\"\r\r\n1.000,5,; ,\néé\t;,1.000,5\"\"\"\"\"\"x,y\t\t\"\"1.000,5;日本é😀bcx,y;", 3, false]}
+{"fn": "split_records", "args": ["日本\r\t\r\nx,y\t1.000,5", -1, false]}
+{"fn": "split_records", "args": ["a\r\n\r\n\r1.000,5", 3, false]}
+{"fn": "split_records", "args": ["\"q\nq\"é\r1.000,5 \n\t\"q\nq\"😀\n\tx,y,\"\r\r\nbc,\"\"日本\"q\nq\"😀bcbc,\"q\nq\"a\n1.000,5 1.000,51.000,5\"\",\r\n1.000,5bcé", 50, false]}
+{"fn": "split_records", "args": ["a\"q\nq\"\r\na\t\"q\nq\"", 50, true]}
+{"fn": "split_records", "args": [" a日本é\"a;\"\"a\"bc\"\"a,\"q\nq\"\"\"a日本 \"q\nq\"1.000,5\r\"\"\r\na日本\"q\nq\"😀\"x,y\"q\nq\"\tbc日本\"q\nq\" \t\r\n ", 50, false]}
+{"fn": "split_records", "args": ["😀\r\r;😀\"q\nq\"a\n\n😀\"\"\"q\nq\"\"q\nq\"bc\"\";\r\na 1.000,5bc\n\"q\nq\"\"\"a\r\n,bc;", -1, false]}
+{"fn": "split_records", "args": [" 日本日本\n;日本, 日本1.000,5\t;;1.000,5,", 2, false]}
+{"fn": "split_records", "args": [" bcéx,y", 0, true]}
+{"fn": "split_records", "args": ["a日本\"q\nq\" \r\r日本;日本", 50, true]}
+{"fn": "split_records", "args": ["a 日本\t\r\n\n\"q\nq\",\r\n\r\"q\nq\"bcaa日本é;\"q\nq\"\"\"x,ya\"\"\"q\nq\"x,y ", 3, false]}
+{"fn": "split_records", "args": [" a\n1.000,5x,y;", 1, false]}
+{"fn": "split_records", "args": ["\"q\nq\"a1.000,5,,日本,1.000,5,x,y \n😀😀😀,\r\n,\"éé", 3, false]}
+{"fn": "split_records", "args": [" abcé日本1.000,5\nx,y日本\r", 50, false]}
+{"fn": "split_records", "args": ["\r\n1.000,5\r\né,é\r\n,😀1.000,51.000,5\" ", 3, true]}
+{"fn": "split_records", "args": [",", 0, true]}
+{"fn": "split_records", "args": ["x,y\r\n日本\t1.000,5\t😀1.000,5\r ;", -1, false]}
+{"fn": "split_records", "args": ["日本x,y\r1.000,5日本\n ; 1.000,5", 50, true]}
+{"fn": "split_records", "args": ["😀\"q\nq\";é\"q\nq\"\r\né,\"q\nq\",\"\"q\nq\"日本😀\"q\nq\"bc日本,x,y\r\"\"\tbc;;,😀\"\",\n\n", 5, false]}
+{"fn": "split_records", "args": ["😀1.000,5ébcbc é x,y\r\n\"q\nq\"日本é\t\"x,y\n1.000,5日本\"x,y😀, \rx,y\r\n😀 ;;;bc\"é\n\r\n\"", 50, true]}
+{"fn": "split_records", "args": [" \t\r\n\"a\"q\nq\"\"q\nq\"\n日本\r\na😀;1.000,5\tbc", 1, false]}
+{"fn": "split_records", "args": ["日本, bc😀a😀", 1, true]}
+{"fn": "split_records", "args": ["é\rbc\"\" é1.000,5,😀 ;\r\"", -1, true]}
+{"fn": "split_records", "args": [";\r\nbc\r\n\ra\t;\r\"q\nq\"\"q\nq\"x,y1.000,5\t\tbc\" \t\"\nx,y😀;\"\"\n,,\"q\nq\"\r\n\"\" bc\r\nbc\"q\nq\"x,y日本", 1, true]}
+{"fn": "split_records", "args": ["bc\"q\nq\"\t\r\na\"日本 ", 2, true]}
+{"fn": "split_records", "args": ["\n\r\n\"\tx,yéx,y\r\n\n;\t日本\"\"bc;é\t\"\"q\nq\"", 50, false]}
+{"fn": "split_records", "args": ["   ;x,y\t \r\n\r\n日本 ,\"\"\"q\nq\"\t,;1.000,5\r\"\"x,y\"q\nq\"\"\"bc\r\nbc日本\"q\nq\";\n a日本,\r\n", 3, true]}
+{"fn": "split_records", "args": ["\n  日本", 5, true]}
+{"fn": "split_records", "args": ["a😀bc\"q\nq\"\tbc😀\tx,y", 1, true]}
+{"fn": "split_records", "args": ["\"\"q\nq\"\"q\nq\" 日本x,y\"q\nq\"bc\té\"q\nq\"x,y\"q\nq\"x,yébc\r\"1.000,5\"q\nq\" x,y\"\"a\"\",日本1.000,5😀", 50, true]}
+{"fn": "split_records", "args": ["\"\"\r\n日本x,y\tx,y\r\n\r1.000,5\r\n;\r,éé😀bc\"\"\ta\r\n", -1, true]}
+{"fn": "split_records", "args": ["1.000,5\"\";;\r,,\"\"x,y\tx,y\r日本\n  \"\r\"\"\"q\nq\"\r\nbc\"bc\"q\nq\"\r\n\"\"日本 \r\n😀,bc\téx,y", 50, false]}
+{"fn": "split_records", "args": ["bc,\"\"\r\n\"\"\r;,x,y\n\t\"q\nq\",\n日本\t1.000,5é日本\n\n\r\r\n", 50, true]}
+{"fn": "split_records", "args": ["é\"\";", 3, true]}
+{"fn": "split_records", "args": ["é😀\"\"1.000,5\n\t\r\r\nx,ya\t😀 ,1.000,5\t;\nbc\"\"\t\t \r\n", 5, true]}
+{"fn": "split_records", "args": ["日本\r\n\n\"\r;x,yé\r\n;\"日本日本 ,", 50, true]}
+{"fn": "split_records", "args": ["\r\"q\nq\"", 5, false]}
+{"fn": "split_records", "args": ["\r\n日本a,x,y é 😀\r\n😀\nbc\n", 0, true]}
+{"fn": "split_records", "args": [" 1.000,5bc\r\n日本\r日本\n1.000,5\"q\nq\"x,y\n\r\n😀\"q\nq\"\r bcé\r\n😀\r\"\"\r\n\"q\nq\"😀", 50, false]}
+{"fn": "split_records", "args": [";x,y;\t\",1.000,5\"q\nq\"\r,😀1.000,5日本\n\"\"", 0, false]}
+{"fn": "split_records", "args": ["\r日本\nx,y\r\n日本,😀😀;a\"\" ,😀a\t日本", 2, false]}
+{"fn": "split_records", "args": [";x,ybc\"\",\r\n\r\n\"\r日本", 50, true]}
+{"fn": "split_records", "args": ["bc \"q\nq\"1.000,5é\t\t😀日本éx,yé\"\"\r\n1.000,5", 2, false]}
+{"fn": "split_records", "args": ["日本\rx,y; ébc\r\n\"\tbc\t,a x,y1.000,5a\n\r\"\"\r\n\"q\nq\"x,ya \t😀\"\tbc,,", 50, false]}
+{"fn": "split_records", "args": ["\r\n;\rbcé\"\"1.000,5\"q\nq\"bcbc日本\rx,y😀;\r\nx,yx,ybcbc;日本\"\"\"\r\"q\nq\"bc\"q\nq\"\r;\t , 😀  \r\n\n", 3, false]}
+{"fn": "split_records", "args": ["日本日本éx,y\"q\nq\";", 1, true]}
+{"fn": "split_records", "args": ["bc\t,\"\"😀\t日本\n;1.000,5日本\"\"日本x,y\r\t\"q\nq\"1.000,5;;ébc\"x,y,bca\né1.000,5;", 50, false]}
+{"fn": "split_records", "args": ["a日本x,y;1.000,5😀\r😀\t\"q\nq\"\"q\nq\"\r\n\"\"\"q\nq\"\"\"\"\"\"\rééax,y \né;\r\r\n\"x,yx,y\n,", 0, true]}
+{"fn": "split_records", "args": ["\"\"\r\n,ax,y\"q\nq\"\r\né\"q\nq\" \"\"\"\"\t é\"\",\"q\nq\" bc1.000,5日本😀\r\né;\t;\"\rx,y", 1, false]}
+{"fn": "split_records", "args": [" 1.000,51.000,5\t\r\t\tbc\"\"éé\r\n\r\naé\n,\r", -1, true]}
+{"fn": "split_records", "args": ["x,y é😀aé\n\"\"", 5, false]}
+{"fn": "split_records", "args": [" ,1.000,5é1.000,51.000,5日本;\r1.000,5;,a\t\"\"\n日本\"\"\";;\nx,yx,y", 2, true]}
+{"fn": "split_records", "args": ["\"日本,é\"q\nq\"\r\"\"x,y\r\"a\t日本😀bc\r\"q\nq\"1.000,5;日本\t\"\"\t;日本x,yx,y\r1.000,5x,y\"\"bc", 50, true]}
+{"fn": "split_records", "args": ["\r\n x,yé\r\t\r", 0, false]}
+{"fn": "split_records", "args": ["é\"\"\"\n\"bc日本\"\",\"q\nq\"😀\né\rbc;\n\r\nx,y\"q\nq\"日本\nbcbc\"é 1.000,5 😀bcx,ybc\"\"", 3, true]}
+{"fn": "split_records", "args": ["\"q\nq\"\n\n\"q\nq\"\t", 5, true]}
+{"fn": "split_records", "args": ["😀\r\nbca\"q\nq\"x,y\"\",,,1.000,5日本\n\r😀é\"\";\rx,y1.000,5\r\n\n😀\r\n\r\né😀\"\"x,yx,yax,ybc\r\nbc1.000,5\n", 5, true]}
+{"fn": "split_records", "args": ["x,y\r😀\r\r\na", 2, true]}
+{"fn": "split_records", "args": ["\"\"\"\"\r\n\r1.000,5\r\n😀", 3, false]}
+{"fn": "split_records", "args": ["😀x,y\"\téaé", 50, false]}
+{"fn": "split_records", "args": ["😀éx,y\"a\"q\nq\"\t\t 😀bc\t\"\tbcbc\t \nbc;\né\n", -1, false]}
+{"fn": "split_records", "args": ["é😀\t\"q\nq\"\"\"\t,\"q\nq\"bc\r\t\t,\"\"\r\n;a ", 2, true]}
+{"fn": "split_records", "args": ["\"\"\n\"q\nq\"a\r\n\n\"q\nq\"a\n\"q\nq\"\r\n\t\r\n;", 5, false]}
+{"fn": "split_records", "args": ["\r,a\téé\"\"日本bc\t\"x,y日本\"\",\r,abc\r\n x,y", 5, false]}
+{"fn": "split_records", "args": ["bc\réx,y ", 5, true]}
+{"fn": "split_records", "args": ["\"q\nq\"aa,\r\r\n", 0, true]}
+{"fn": "split_records", "args": ["\n1.000,5\"日本abc,aa1.000,5\",\r", 50, true]}
+{"fn": "split_records", "args": ["\r\n", 2, true]}
+{"fn": "split_records", "args": ["\rbc\r\nbc;\t", 2, true]}
+{"fn": "split_records", "args": ["\n \r\n,\rx,y\"q\nq\" \"q\nq\"1.000,5 é,\"\"\"q\nq\"a\"\t\"\"q\nq\" ,,aé\n日本a\"q\nq\"aé \n\"\";bc", 2, true]}
+{"fn": "split_records", "args": ["\"\r\n,1.000,5\r;\té;\r\na;;😀x,yé", 5, true]}
+{"fn": "split_records", "args": ["ax,y\t\r\n\t1.000,5 ;😀\"\"é,\"q\nq\"é\té\n,日本a😀\"q\nq\"\r\n \"q\nq\"\r\r\n\"\n\"q\nq\"1.000,5\"\"😀,\"q\nq\";\"x,y\r", 0, false]}
+{"fn": "split_records", "args": [" \t\"", -1, true]}
+{"fn": "split_records", "args": ["bcbc;\r\néé1.000,5;\"\",\r bc\"q\nq\"\r\n\"q\nq\"bc😀\"q\nq\"\"1.000,5\"bc\"q\nq\"é\r\n\"\"\"\r\nbc\"\"", 0, false]}
+{"fn": "split_records", "args": ["1.000,5é\t;x,y\r\n日本; \"q\nq\"😀", -1, false]}
+{"fn": "split_records", "args": ["\r\"q\nq\",\n ,é\"\"\"\r\"\n😀😀,, \r1.000,5\nx,y\n,\t1.000,5\n\"\tbc;\"q\nq\"\"\n😀日本;", 2, true]}
+{"fn": "split_records", "args": ["  1.000,5\r\"\" \r\rx,y\r\nx,y;\"\"é日本\"\"bc\"q\nq\"x,yx,y \n1.000,5\n \n日本x,ya😀\"q\nq\"\n", 5, true]}
+{"fn": "split_records", "args": ["\r1.000,5😀ébc\" 😀a日本\"\"\"q\nq\" \"\"", -1, true]}
+{"fn": "split_records", "args": ["x,y\ré😀", 5, false]}
+{"fn": "split_records", "args": [",日本éééa\"\"a,\" 1.000,5,,1.000,5😀\n😀\"\"日本\"", 1, false]}
+{"fn": "split_records", "args": ["bcbc\"\"\n\t,,\r日本\"\r,x,ybc😀\n\t\"\n\r\"q\nq\"", 2, true]}
+{"fn": "split_records", "args": ["1.000,5bc\"\";\r bcx,yébc\"\"", 50, true]}
+{"fn": "split_records", "args": ["a,x,y\"q\nq\"bc  bc😀;\"😀\"\"日本 \"\"", -1, true]}
+{"fn": "split_records", "args": ["\n\r\n\r\nbc\"q\nq\"\"q\nq\"\r\t\"", 2, true]}
+{"fn": "split_records", "args": ["\r\n\"\"\t日本x,y\t", 50, false]}
+{"fn": "split_records", "args": ["1.000,5 x,y\n\r,\r\n\n\"\na\r\"q\nq\"", 50, true]}
+{"fn": "split_records", "args": ["é\t\"\"\";é日本a,日本", 50, false]}
+{"fn": "split_records", "args": ["a\"\" a\t\t,\"\"bc \n ", 50, true]}
+{"fn": "split_records", "args": ["bc", 2, true]}
+{"fn": "split_records", "args": ["\n\"a", 50, true]}
+{"fn": "split_records", "args": [",é\"\";\t日本\"q\nq\"aé日本\"q\nq\"\r ,\r\n\r1.000,5\"q\nq\"\t日本", 0, true]}
+{"fn": "split_records", "args": [";a;日本é\"", 5, false]}
+{"fn": "split_records", "args": ["x,yé\r😀", 0, true]}
+{"fn": "split_records", "args": ["😀日本\rx,ybcx,yé\r;x,ya\"\"\r\n\tabc\"\" bc,éa;bc\n", 0, true]}
+{"fn": "split_records", "args": ["日本", 0, false]}
+{"fn": "split_records", "args": ["1.000,5日本\né\r\n,\t;\t\r\r\n,\r\n ,;\ra1.000,5", 2, false]}
+{"fn": "split_records", "args": [",\r\n\r\n\"\"\n\taa", 1, false]}
+{"fn": "split_records", "args": [";;日本\t\r\n\n\"\"\"a\r", 2, true]}
+{"fn": "split_records", "args": ["😀x,y\"q\nq\"😀\tx,ya\r\n\"q\nq\"bc;  é", 5, false]}
+{"fn": "split_records", "args": ["\r\"q\nq\"日本\tx,y😀x,y, ,\"\"bc\nx,ybcx,y\t\r\n\na日本;日本\r\n\"\",\n\"\t;;\"q\nq\"日本\r\n,\"", 0, true]}
+{"fn": "split_records", "args": ["日本\n\"\r\néx,yé1.000,5😀😀\r\n\"\" bc1.000,5x,y;😀,😀\r\"\"x,y\t\"bcéx,y", 2, false]}
+{"fn": "split_records", "args": ["\"\"bc😀\"\rx,y; abc\r\n\t\"\"a", 5, false]}
+{"fn": "split_records", "args": ["", 0, false]}
+{"fn": "split_records", "args": [",x,y\"q\nq\"1.000,5 \"\r;,😀;\"\"a", 3, false]}
+{"fn": "split_records", "args": ["\r\n\r\n ", 5, false]}
+{"fn": "split_records", "args": ["1.000,5x,yabcé1.000,5 \"\"\r\na\"bcx,y😀;😀é", 50, false]}
+{"fn": "split_records", "args": ["\r\n日本日本x,y\r \"q\nq\"1.000,51.000,5;日本\n,\n", 2, false]}
+{"fn": "split_records", "args": ["\"q\nq\"\r1.000,51.000,5x,yx,y日本\" \t😀\"\" \t\t\r,\"1.000,5bc\"\"\"bc1.000,5bc\" 日本\r\n1.000,5x,y,x,y", 2, true]}
+{"fn": "split_records", "args": ["日本 \r\n1.000,5\"q\nq\"\"1.000,5a\"\"\"\"\r\n日本\n\"\r\n1.000,5ébca\"\"a1.000,5 \"日本,\"日本\t\"q\nq\"😀1.000,5😀,", 2, false]}
+{"fn": "split_records", "args": ["😀;\"日本1.000,5\r\r", 0, false]}
+{"fn": "split_records", "args": ["😀,日本ax,ya\"q\nq\"x,y,\r\na\"\"a\n;;", 2, true]}
+{"fn": "split_records", "args": ["bc;\t\né\r\"bc\t\r \n1.000,5😀\"q\nq\"ax,y1.000,5\tx,y1.000,5\n\t", 3, true]}
+{"fn": "split_records", "args": ["\n\n\r\n1.000,5,1.000,5\r\n\n\"\r\n\"bc\"\"x,y\r\n\t😀\"😀\"\"bc\r\né1.000,5,", 0, true]}
+{"fn": "split_records", "args": ["\r\na1.000,5😀\r\n\r\n1.000,5bc\rx,y; \né1.000,5bc😀bcx,ya\"\"\",日本\t1.000,5\r; ;1.000,5\"q\nq\"", 5, false]}
+{"fn": "split_records", "args": [" \"\"\r\n \r\né\rx,y\né\"\"😀\ta;\"1.000,5\r", 3, true]}
+{"fn": "split_records", "args": [";\r\na;\t\t\t,\tx,yé\"\"\r\n;\"\"\nbc;;a\n\r\n日本\ra\"q\nq\"\r\n\t\r\n,;", 2, true]}
+{"fn": "split_records", "args": ["\nbc\"\"\nbc;\"q\nq\"\"\"a\"q\nq\"\"\"\n1.000,5;\t\"\"", -1, true]}
+{"fn": "split_records", "args": ["\"éx,y日本;\nbc😀\ré\t1.000,5\n\na\r\n\" \t 1.000,5\r😀,\r\r \"\";\t\"1.000,5\"q\nq\"", -1, true]}
+{"fn": "split_records", "args": ["\"q\nq\"\"q\nq\"日本\"q\nq\"日本é😀1.000,5bc😀日本\tbc\r\n", 1, true]}
+{"fn": "split_records", "args": ["😀,\t\n1.000,5; \r\n;\r\n😀日本日本x,ybc\n日本 \r\n\"q\nq\"\"q\nq\"x,yé,bc\nx,y\"\"\",\r", 2, true]}
+{"fn": "split_records", "args": ["\"\"\r\n\"\r\n\r\n,bc\"bcé\"\"a,\rx,y\rbcé x,y\"\"bc", 2, false]}
+{"fn": "split_records", "args": ["\taa\t\"\",\"\"q\nq\"1.000,5\"\"日本 é日本1.000,5\r\n\na\"\";\"x,ybc😀a\"q\nq\"😀\t\n\n\n\né", 5, false]}
+{"fn": "split_records", "args": [",\naa 😀x,y😀,日本😀\t\"q\nq\"1.000,5\r,日本; bcé,\"q\nq\" 😀\nbc \r\n\n😀\t1.000,5\n\r\n\r\n ", 5, false]}
+{"fn": "split_records", "args": ["abc日本\"\"\t\n;x,y\"\"\"q\nq\"\n\"\",", 5, false]}
+{"fn": "split_records", "args": [" 日本x,y\t\t\t;\"\"é,é\r😀\r\n\"\"\"\", \"\",x,ybcbcx,ybc\t\"\"\t \"q\nq\"日本a\r1.000,5x,y\t\na", 50, false]}
+{"fn": "split_records", "args": [",\"q\nq\"", 0, false]}
+{"fn": "split_records", "args": ["\"\",\n\r\n\n\n😀aé\né\r\"q\nq\"\"q\nq\";\na1.000,5x,ybc\r😀é \ré😀\r\nabc1.000,5a\"q\nq\"\"", -1, false]}
+{"fn": "split_records", "args": ["\"q\nq\"\r😀\rabc", 1, false]}
+{"fn": "split_records", "args": ["\"\"\"q\nq\"\r\n\"\r😀 😀\n", 0, true]}
+{"fn": "split_records", "args": ["\na; bc\ta\"\"\"ax,y\t\n\"\",\"x,ya\"aaa\n\"q\nq\"日本;\t\"q\nq\"; \"é\"\"", -1, true]}
+{"fn": "split_records", "args": ["ax,y\"\";,😀\"q\nq\";\t\"\" \té;\"日本\"\r\rbc,bc\r ;\"q\nq\"\n\n日本\"", 3, true]}
+{"fn": "split_records", "args": ["日本x,y1.000,5日本;,日本 ;", -1, true]}
+{"fn": "split_records", "args": [";\rx,y", 1, false]}
+{"fn": "split_records", "args": ["\r😀bc\"\n\"\"\";x,y\"q\nq\"\r\"\nbc\t\"q\nq\"😀😀", -1, false]}
+{"fn": "split_records", "args": ["\n\"q\nq\"\n日本é1.000,5\"q\nq\"😀é\t", 5, false]}
+{"fn": "split_records", "args": ["\r x,y日本\r\nx,y\",a\"\"\"aa\r\n\"q\nq\"\r\nx,y\n x,y1.000,5日本 bc", -1, false]}
+{"fn": "split_records", "args": [";bc 1.000,51.000,5😀\n;bc 😀,,,\nbcx,y;😀bc😀é\"q\nq\"x,y1.000,5\t1.000,5\r\r1.000,5;\t;1.000,5", 1, false]}
+{"fn": "split_records", "args": ["\" \n\r\r\n😀\n\"\"\"\"\"q\nq\"1.000,5\né\r\"q\nq\"日本\r日本\r\né😀\"", 3, true]}
+{"fn": "split_records", "args": ["日本;\"q\nq\"x,y😀1.000,5\"\"\"日本é1.000,5é;;,é\"é ", -1, false]}
+{"fn": "split_records", "args": [" 😀a\r\r1.000,5\"\t\" \tabc\r", 50, false]}
+{"fn": "split_records", "args": ["\n,,\"日本\"q\nq\"\"\r\n \r\n;\rbc\n,bcbcé\t\n,,\"\"\"\"", 50, false]}
+{"fn": "split_records", "args": [" ;x,y\r\r\n😀x,ya\n日本\n x,y\r\n\ra\n\r\n\"😀\"\"\"\"\n;", 5, true]}
+{"fn": "split_records", "args": ["1.000,5;,\nx,y\n1.000,51.000,51.000,5\t,1.000,5\"q\nq\"😀日本1.000,5;,a\" ,\r\"\";\n😀\r\n\r\"q\nq\"\"\"", 5, false]}
+{"fn": "split_records", "args": ["bc;a", 2, false]}
+{"fn": "split_records", "args": ["\"\té\nx,y日本 \n\t 1.000,5日本\t é\"\"日本  😀😀 bc,\r\n\r\n日本", -1, true]}
+{"fn": "split_records", "args": ["x,ya\"é\n\t1.000,5😀,x,y\"q\nq\"\t\"q\nq\"bca\"q\nq\"bcax,y\"q\nq\"\r\n\n\n\t1.000,5bc;\"\"", 0, true]}
+{"fn": "split_records", "args": ["1.000,5\n1.000,5;\"\"\"\"ax,y日本\r\n \ra\r\n \"q\nq\"bc\r\té", -1, false]}
+{"fn": "split_records", "args": ["\r\n\"\"\t x,yx,yé\r\"\"q\nq\"\r\t\"q\nq\"\t😀,\r\né\tx,ya\"日本\r\n\"q\nq\"\r😀\r\nbc 😀;\rx,y", 2, true]}
+{"fn": "split_records", "args": [",\r", 3, true]}
+{"fn": "split_records", "args": ["日本\taa😀\"q\nq\"\r\n,", 3, true]}
+{"fn": "split_records", "args": ["\r\n\"q\nq\"\"\"\r\n\"\" \"日本\rx,y;abc日本\n\tx,y\"éx,yx,y\r\r,\t\né,é\"\"日本\r,\r\n\r\na\r\n,", 1, true]}
+{"fn": "split_records", "args": ["\"\r\n1.000,5日本日本\t;\nx,y\r\n \t", 1, true]}
+{"fn": "split_records", "args": ["\"q\nq\"\"\"\t\n\tx,y1.000,5", 5, true]}
+{"fn": "split_records", "args": ["\t x,y日本\n\né\tx,ya,\r\n\t\n\t\"q\nq\"bcbc\r", 5, true]}
+{"fn": "split_records", "args": [";x,y日本\r\n\"\t😀日本\r\"q\nq\"\"a\";\"q\nq\"\r\"q\nq\" x,y\n \r\n\t,a\r\n\"1.000,5;\r\";", 3, true]}
+{"fn": "split_records", "args": ["bca, ,1.000,5\r\né😀日本😀;abc\n\né\n1.000,5éa\"q\nq\",\r,", 2, true]}
+{"fn": "split_records", "args": [",1.000,5\r ,\"q\nq\"\r\nbc\né\"q\nq\"日本\ré;\n\"q\nq\"1.000,5\"q\nq\"\"q\nq\"é\"\r\n\"\" \"\"\r\né\"q\nq\"\t\n\"\"", -1, true]}
+{"fn": "split_records", "args": ["\né日本é😀1.000,5x,yx,y日本", 50, true]}
+{"fn": "split_records", "args": ["\"\"\";1.000,5😀日本😀a \r\n日本\n;\r\n\"\"a;\réx,y\t\tbcbc\"q\nq\"\n\n", 2, true]}
+{"fn": "split_records", "args": ["\"q\nq\"é 1.000,51.000,51.000,5,\t", 0, true]}
+{"fn": "split_records", "args": ["x,y;bc\r\t\n1.000,5", 2, false]}
+{"fn": "split_records", "args": [",,\"\"x,ya\" \"\"q\nq\"😀\r\n\t,é1.000,5bc\"\"\",,é日本\n\"\r\n\"\"\",日本\n\n", 2, false]}
+{"fn": "split_records", "args": [" ;\"a\r\na,\"\"\r\né,\"q\nq\"é\"bc\t,\t\r\r\né", 50, false]}
+{"fn": "split_records", "args": ["éa\t1.000,51.000,5\"\"a\"\r;😀,\n\"\r\n1.000,51.000,5x,y;a\"", 2, false]}
+{"fn": "split_records", "args": ["\r\n\"q\nq\"bc\"\"a;x,y \"\"\"", 50, false]}
+{"fn": "split_records", "args": ["\"x,y", 2, true]}
+{"fn": "split_records", "args": [";\rx,y\r\n\",\"\r\n\"\"x,y\r \n\r😀a1.000,5 日本\rbc;\r\"q\nq\"日本\"\"x,y;日本", 50, true]}
+{"fn": "split_records", "args": ["é\"x,y\n\r\n\"q\nq\"bcé\r\n\t,x,y\"q\nq\",é", 50, false]}
+{"fn": "split_records", "args": ["\r\n\t\"q\nq\"\n\nx,y\t ;1.000,5\r\n\"\"\"\"éé😀\t ", 2, false]}
+{"fn": "split_records", "args": ["😀日本\"\"日本", 3, true]}
+{"fn": "split_records", "args": [",\n😀\r\n\"q\nq\"1.000,51.000,5 \r日本 😀x,y\"q\nq\"\t", 2, true]}
+{"fn": "split_records", "args": ["\"\"\n \tbc1.000,5\"\t\t\n\"q\nq\"é", 0, false]}
+{"fn": "split_records", "args": ["日本\r😀 😀\"\"😀日本\té\t日本\"q\nq\"x,y,1.000,5\"\"bc\"\"\t,", 0, true]}
+{"fn": "split_records", "args": ["\r😀bc\r\né日本,\"\"\t;éé\r\n\nbc,\r ,\r\"\r\n;;\té;\tbc😀\r\"q\nq\"日本\r\n\"q\nq\"1.000,5\"q\nq\"日本", 2, false]}
+{"fn": "split_records", "args": ["aé\"\r\n\"\"x,ybc日本\t😀\r;\ta\r\raébc1.000,5 ", 2, true]}
+{"fn": "split_records", "args": ["1.000,5\"q\nq\"bc\n\ré1.000,5,\"\ra日本", 0, true]}
+{"fn": "split_records", "args": ["1.000,5;\"; 日本, \"", 1, false]}
+{"fn": "split_records", "args": ["\r\n bc\r\tbc\r\n\r\n\n\n\"q\nq\" \té\"q\nq\"日本😀\r\"\"\t\n", 5, false]}
+{"fn": "split_records", "args": ["x,y\"q\nq\"\"bc😀;;\n1.000,5 1.000,5\n,\n\"\r\n\té\"q\nq\"日本aa", 5, true]}
+{"fn": "split_records", "args": ["bc\r\n\n\r😀é😀\r\n日本\"q\nq\"é\tx,y日本é\r\n\r\r\nbc a\t\"q\nq\"\r\n;\t\"q\nq\"\r\n \t", 50, true]}
+{"fn": "split_records", "args": ["bc1.000,5\nx,y\"\"a\"q\nq\"\"\"\r\n\r\n\n\"\r\n\r  a\"\"\"a\n", 3, true]}
+{"fn": "split_records", "args": [" bc\"q\nq\"日本\t😀", -1, true]}
+{"fn": "split_records", "args": [" é;😀😀\"q\nq\"é😀", 50, true]}
+{"fn": "split_records", "args": ["\"\"1.000,5\n\r\n\"\"\r\ra\r\n\r;x,y,日本\"\"😀é1.000,51.000,5,日本\r\n\n\"\"\t,é\r\n日本a\r", 1, false]}
+{"fn": "split_records", "args": ["\r\"\r\n1.000,5 \r\r, \né\n\r\r\n\r😀x,y\"q\nq\",\"\"é日本\"\";1.000,5;", 2, false]}
+{"fn": "split_records", "args": ["x,y\r,\r\t1.000,5日本😀;;bc ax,y\n,é\"q\nq\"1.000,5\r\n,bc1.000,5\r,aéé\"", 3, false]}
+{"fn": "split_records", "args": ["日本\r\"\"x,y\r\néa\t,\",日本😀😀😀😀\"q\nq\"", 1, false]}
+{"fn": "split_records", "args": ["\"\"\té1.000,5\r\n\té;bcx,y 日本\"q\nq\"x,y\tx,y \r\"\",;é😀", 1, true]}
+{"fn": "split_records", "args": ["a\"\"\r\n;1.000,5😀,\"\"\n", 0, true]}
+{"fn": "split_records", "args": [";\"\"q\nq\"bc😀x,y\r\nbc😀日本,é\néx,y \"\"\"q\nq\"\r\n\"q\nq\"\"\"\";😀\r\n", 1, true]}
+{"fn": "split_records", "args": ["\t\"\"ébcbcbc;x,y1.000,5 a \r1.000,5\"\"\r\nx,ya\"q\nq\" a", 3, true]}
+{"fn": "split_records", "args": ["\"\"", 3, true]}
+{"fn": "split_records", "args": ["x,y日本a\"\"\"q\nq\"\";  \r\n\"\"q\nq\"\r\né\", \ta\r日本日本\"\"a\"q\nq\"\"日本;\r\n\r\nx,y\n\r\n😀é", 3, false]}
+{"fn": "split_records", "args": ["bcx,yx,ybc\n\r\n日本,\r\n\"q\nq\"a\"\r\n\"\"\r\n\r\"q\nq\"\"q\nq\"x,yé1.000,5\"q\nq\";😀日本\"\"aé日本;", -1, true]}
+{"fn": "split_records", "args": [";\"q\nq\";1.000,5ébcé\r\tx,ybc1.000,5😀\r\n日本\n😀\"\";;,", 1, true]}
+{"fn": "split_records", "args": ["日本 ,x,y\né\t\"q\nq\"日本;\"q\nq\"1.000,5\"q\nq\"", 0, false]}
+{"fn": "split_records", "args": ["\"q\nq\"a\"\"\",  \"bc\r\"\"\"q\nq\"\r日本😀\"\r\n日本a\"\"\"bcx,y\t;é\n\t😀a\t日本\"\r\n", 1, true]}
+{"fn": "split_records", "args": ["x,yé\"bc\tx,ybc\r\n😀\"q\nq\" x,y", -1, true]}
+{"fn": "split_records", "args": [";;é日本a 日本", 5, true]}
+{"fn": "split_records", "args": ["bc\r\"\"日本\"\",日本\"\r\n😀\"\"bc😀\n\rax,y;\r\n\r\r\nbca\n日本\r\"😀\r\n\"\"日本éa\"\né日本\"\"", 1, true]}
+{"fn": "split_records", "args": ["\t", 50, false]}
+{"fn": "split_records", "args": ["1.000,5 x,yé; x,y\r\nx,y\néé\"\"\r,,😀a\r ;\"x,y\"\t", 1, false]}
+{"fn": "split_records", "args": [",\t\"q\nq\",x,y\r,é\tbc1.000,5;\"\",é\r😀bc\n\n\"q\nq\"éééx,y😀😀日本\n😀\t1.000,5日本", 50, true]}
+{"fn": "split_records", "args": ["a\"\"q\nq\"😀,a\"q\nq\"\"\t\n 日本", -1, false]}
+{"fn": "split_records", "args": ["\tbc\"q\nq\"😀a😀, \" é\"\"\"\"\nbc\tx,ybc 日本 ,x,y日本\t\",😀;,, \"\nbc 1.000,5\n", 1, true]}
+{"fn": "split_records", "args": ["x,y\"q\nq\";  😀1.000,5bc,日本\n \r😀x,y\"q\nq\"é\t;日本\t\r\n😀\n日本\"\"x,yé\n,\t\té ", 5, true]}
+{"fn": "split_records", "args": ["\n\r a\r1.000,5a\"\"日本\n,日本\"\"; \r\n\r\n\na\"\"\n  \n\r\"q\nq\"\t\r\"\"\rx,y", 3, false]}
+{"fn": "split_records", "args": ["\r😀\nbc\r\r日本bc; bcé\"\"\"日本bc1.000,51.000,5\"q\nq\"x,y\"\"x,y1.000,5,éaa\t\r\n", 2, false]}
+{"fn": "split_records", "args": ["x,y\r\n", 5, true]}
+{"fn": "split_records", "args": ["\"q\nq\"\n\n日本é", -1, false]}
+{"fn": "split_records", "args": ["bc日本\r\n;😀日本\t,x,y\"q\nq\" \r\n\r\"\"\"\" \n\"x,y; 😀\r\n\n\r\n\"q\nq\"", 2, true]}
+{"fn": "split_records", "args": ["\n\n\t\tx,yax,y1.000,5 x,y\n", 3, false]}
+{"fn": "split_records", "args": ["1.000,5\r\n\tbc1.000,5\r\n日本é", 1, false]}
+{"fn": "split_records", "args": ["\"\"日本x,yé\r\n\"\",\t,;é ,\n\r\n😀日本a\n1.000,5é 1.000,5\"\"x,ybc\r\n\"q\nq\"é\t\"\"\"q\nq\"bc\"bc", 1, true]}
+{"fn": "split_records", "args": ["1.000,5\n\"q\nq\"日本a \t\"1.000,5 \t\"\"\"\"\"\"\"\"\n😀a\ta\té\"\"日本\"日本\"bc1.000,5\"q\nq\"a\"q\nq\"\"\t\"\"\r\n1.000,5", 50, false]}
+{"fn": "split_records", "args": [",日本;\"\" a;,\n日本1.000,5bc\r\n\"q\nq\"\ra😀bc,\r\n  x,ybc\tx,y\t", -1, false]}
+{"fn": "split_records", "args": ["\r \"\t", 50, false]}
+{"fn": "split_records", "args": ["1.000,5\ra\"\"\t ", 3, false]}
+{"fn": "split_records", "args": ["\t", 0, false]}
+{"fn": "split_records", "args": [";1.000,5 ", 2, true]}
+{"fn": "split_records", "args": ["\r\n1.000,5; 日本\t😀日本\"\"bc😀;\r\n\r\"\"é\"q\nq\"", 1, false]}
+{"fn": "split_records", "args": [";x,y;1.000,51.000,5;bc😀1.000,5\r\r\nx,y😀\t\r\"\" 日本,\n\"éa é1.000,5\"q\nq\"bc😀1.000,5x,y;\"\"\r,日本x,y", -1, true]}
+{"fn": "split_records", "args": ["\"😀\r\n;;\"\"\r \r\n;\"q\nq\"1.000,5,\t \r\",\r😀\r\"q\nq\"x,yaa1.000,5,", 3, true]}
+{"fn": "split_records", "args": [" ,\r\r\n;\n\n \r\n\ra\n;,1.000,5; 1.000,5,;\"\"\t", 2, true]}
+{"fn": "split_records", "args": ["日本\t\"q\nq\"日本\"\r,bcé😀;\"q\nq\"x,y\t\r\nbcé\r\n\"\"😀bc \r\t\r\"q\nq\",1.000,5\t日本日本\"\"日本1.000,5bc😀", 3, true]}
+{"fn": "split_records", "args": ["a\"\"x,y\r\n", 1, false]}
+{"fn": "split_records", "args": [" 😀\r\n\n\nx,y", 50, true]}
+{"fn": "split_records", "args": ["\";,\"q\nq\",😀\"a;日本\té\r,x,y日本 ", 3, false]}
+{"fn": "split_records", "args": ["😀 \r \"日本\"q\nq\" \r \"\"\"\"\r\n\", \"q\nq\"\r\na\rbcbc\r\n\"q\nq\"\t1.000,5\";;日本1.000,5", 5, false]}
+{"fn": "split_records", "args": ["1.000,5\r1.000,5bc\"\";bc", 5, true]}
+{"fn": "split_records", "args": ["1.000,5\r x,y\" 😀\t\r\nx,y\r\n\"\"\"\" 😀😀\"q\nq\",\"q\nq\"\t\"\t\"q\nq\"éé\té \"ébc\"q\nq\"", 0, false]}
+{"fn": "split_records", "args": ["\"q\nq\"\"q\nq\"\n,😀1.000,5日本\t 1.000,5x,y \"\"a😀", 5, false]}
+{"fn": "split_records", "args": ["\"q\nq\",1.000,51.000,5\"\"x,y\n\"bcbc;\r\r\n\t\"q\nq\"\"\r\né😀bc\"\"\"q\nq\"bc\nx,y,\r\t日本1.000,5x,yx,yé\"\r😀日本;日本", 2, true]}
+{"fn": "split_records", "args": ["1.000,5bc\r;abc日本1.000,5x,ybc;bc \"\r,😀\r\tébcé\"", 1, false]}
+{"fn": "split_records", "args": ["\n\rx,y;日本\n\r\r\r\t,\r\n\"q\nq\"x,y\"\"\n\r\né,;\n\t aa😀\"日本,😀,\r\n\"\"1.000,5é", 1, true]}
+{"fn": "split_records", "args": ["\"\"\n\"éa\"\"", 2, true]}
+{"fn": "split_records", "args": ["\"q\nq\"😀日本,bc😀\r;a😀bc\"\"\";bc1.000,5,\"\n😀bcbc\"q\nq\"\";", 1, true]}
+{"fn": "split_records", "args": [";\r,", 3, true]}
+{"fn": "split_records", "args": ["\t\t\"\"a\n\rbcx,y\né,é日本\n,é\tbc1.000,51.000,5\"\"x,y", 2, true]}
+{"fn": "split_records", "args": ["\r\n\t,;bcé\r\n😀é\n", 0, false]}
+{"fn": "split_records", "args": ["a😀 x,yx,y\né日本ax,y\"\"éx,y,abc\"\t\r\r;1.000,5é,x,y日本日本\t", 5, false]}
+{"fn": "split_records", "args": ["\"\t\r\n\"q\nq\";\t;\"\"\rbc\t\"\r\n\r\"\"\"\"😀😀\"é", 1, false]}
+{"fn": "split_records", "args": [" x,ya\r\r\né\r\n\"q\nq\" bc1.000,5\r\n\"q\nq\"\nbc\ré\r\n \"\";\rébc\"q\nq\"x,y;", 50, true]}
+{"fn": "split_records", "args": [";\t,;bc;\"\";;;😀\n😀\"", -1, true]}
+{"fn": "split_records", "args": ["ax,yax,y,1.000,51.000,5a;日本\"\",😀x,yaa\r", 3, true]}
+{"fn": "split_records", "args": ["bc日本\t \t,bcé\r\néa\n\"\"q\nq\"\r\n1.000,5\r\n\"\"\"\";\t😀x,y\"\"q\nq\"bc\"\";\"q\nq\"😀;;日本\r;bc,", 2, true]}
+{"fn": "split_records", "args": ["\r\n\"q\nq\"\t", 3, true]}
+{"fn": "split_records", "args": ["😀日本\n\"q\nq\"1.000,5a\"\r\n", 3, true]}
+{"fn": "split_records", "args": ["日本\"\"\"a😀,日本,,\"\"1.000,5aé1.000,5😀\r\nbcbc\nbc\"q\nq\"\t\"q\nq\"a😀\r,a,😀bc\t;\"\"😀\n\"", 2, true]}
+{"fn": "split_records", "args": [",\n ,日本x,y\"\"\"\né\"q\nq\"a\"\"\"\n\"q\nq\"\r\"\"aé\"x,ya\r\nabc\r\"\"q\nq\"é\"q\nq\"", 50, false]}
+{"fn": "split_records", "args": ["\r\na\"\r\r\n ébcé \r\n", 5, true]}
+{"fn": "split_records", "args": [" 1.000,5\"q\nq\"é;\"\"\n😀,\"q\nq\"", 1, false]}
+{"fn": "split_records", "args": ["😀, \t😀\t,bcx,y\r\r\n \t,aa\n \r\n\r日本éé 1.000,5\"\"\n\r\n日本日本\t\r\"é日本bc\r\n\t\"", 1, false]}
+{"fn": "split_records", "args": [",\r\né\tx,y😀😀a\r\r\n", -1, true]}
+{"fn": "split_records", "args": ["1.000,5;x,y\r\n\n", 5, false]}
+{"fn": "split_records", "args": ["\"q\nq\",😀\"\"a😀bc\"q\nq\"; é\t\r \r\n bc\"q\nq\"\"bc\t;x,y\"q\nq\"\n1.000,5日本a\"\"x,y\"\"日本日本", 5, true]}
+{"fn": "split_records", "args": ["\t\"q\nq\"\ré\t\"\"x,y😀日本\"\"x,ybc😀😀, ", -1, true]}
+{"fn": "split_records", "args": ["a", 2, false]}
+{"fn": "split_records", "args": [",\r\n\"\"bcbca\"a\"😀 😀\t;\r\nx,y", -1, false]}
+{"fn": "split_records", "args": ["日本\n;\"q\nq\" ;\"q\nq\",", 3, true]}
+{"fn": "split_records", "args": [";\"q\nq\"\r\né 1.000,5,a日本1.000,5\"\rx,y \r\n1.000,5日本\nax,y\r\"\"😀é;\r\n \t", 5, true]}
+{"fn": "split_records", "args": ["bc\"\"a\";😀;;\"q\nq\" 😀\tbc日本\n1.000,51.000,5\ra\t\"q\nq\"x,y日本😀日本\r\na\r\"\"bc", -1, false]}
+{"fn": "split_records", "args": ["\"\"a1.000,5é\"😀;,é\"q\nq\";ax,y日本bca\r\n😀1.000,51.000,5\t\r\n\r\n\t  \r\n\r\"bc日本;\", 1.000,5", 0, false]}
+{"fn": "split_records", "args": ["\n日本a\r1.000,5x,y,\"; aé\"\n", 2, true]}
+{"fn": "split_records", "args": ["\né\t😀\",;\"\"x,y\"q\nq\"\n\"\";\ra\r😀", -1, false]}
+{"fn": "split_records", "args": ["\"é\r\r\n\"é\"q\nq\"bc\r\"q\nq\" \"q\nq\"\n😀\"\t\"1.000,5\r\n\";😀\"\"1.000,5\r \n\"q\nq\";\"é1.000,5\r\n", -1, true]}
+{"fn": "split_records", "args": [",\t;1.000,5\"\"1.000,5日本😀😀😀日本x,y;😀1.000,5x,y日本\r\n\r😀\rx,y😀\n日本1.000,5;;;😀", 1, true]}
+{"fn": "split_records", "args": ["bc\"aé😀\"q\nq\"日本bc\r\nx,yé \té;\"\"a\"\"é;x,y\t,  ;\r\n\"q\nq\"\t日本", 1, true]}
+{"fn": "split_records", "args": ["😀\n\"\";\"\"ax,yé😀 日本\"é\t\t\"\n日本a\nbc", 2, false]}
+{"fn": "split_records", "args": [";😀x,y\té😀x,y\n\n\r\n日本\"\"\nx,y\";x,y\t日本1.000,5\"\r\n\"\"\r\n", 2, true]}
+{"fn": "split_records", "args": ["é ;\"q\nq\"\"q\nq\"\t", 3, true]}
+{"fn": "split_records", "args": ["\"\"\n\"q\nq\"\"\";,😀abc日本\r\n\t\"q\nq\"😀1.000,5\n1.000,5é;1.000,5\t;,\t\n\n1.000,51.000,5\r\né\"\"\r\né\r\n\r\",\r\na", 1, true]}
+{"fn": "split_records", "args": ["\r\n \"\t\"q\nq\"日本;;\"\r;\t\"\"x,yx,yx,y bc\na 😀 bc\r\n\n éaa1.000,5 \"q\nq\" ;", 1, true]}
+{"fn": "split_records", "args": ["", 0, false]}
+{"fn": "split_records", "args": [",\n é,\"q\nq\"1.000,5\"\"bc日本\"\"\"\"\r\"x,y\"q\nq\"é 1.000,5x,y\"\";\tbc,aéa;", 5, true]}
+{"fn": "split_records", "args": ["\"\n;a\tx,y", 5, false]}
+{"fn": "split_records", "args": [" \nx,y\"\n;;x,yx,y😀\"\"\r\"", 5, true]}
+{"fn": "split_records", "args": ["日本;\"x,y日本😀,\ra,\r\n\t\r;\";x,y\r\tbc\"\"\r\n \"\"", 0, false]}
+{"fn": "split_records", "args": ["\"é😀;\"\"\" \t\"q\nq\"bca,\"bc\"q\nq\",bcx,y\r\n\n😀éx,y\"abc\n\r", 50, false]}
+{"fn": "split_records", "args": ["", 1, true]}
+{"fn": "split_records", "args": [" 1.000,5\"\r\n😀\t;日本😀\n,\r \rbc\r\"q\nq\",a😀 \r,日本 \"q\nq\",\"\"", 2, true]}
+{"fn": "split_records", "args": ["日本1.000,5\n é😀\r \"q\nq\"日本\"\"", 1, false]}
+{"fn": "split_records", "args": ["\"q\nq\" \"\na", 2, false]}
+{"fn": "split_records", "args": ["😀\t1.000,5éx,y\t\t😀é\"\té\r\n😀\"\"\rbc\";", 1, true]}
+{"fn": "split_records", "args": ["\r\n\t\"日本bc1.000,5\r\n日本\r\n;\"q\nq\"\r;\n;\rx,y\n;\"q\nq\"\r\n;", 3, false]}
+{"fn": "split_records", "args": [",a\r\n,;;\t \r\n;\r\"bc\"q\nq\"😀x,y\"1.000,5\"\"\"\"\rx,y\"q\nq\";", 0, true]}
+{"fn": "split_records", "args": ["éa;", 50, true]}
+{"fn": "split_records", "args": ["x,y日本,\n日本x,y\téé; \ta,\"ééx,y\ra\"q\nq\"x,y\r\n\n\r\n\t", -1, true]}
+{"fn": "split_records", "args": ["x,y\r\n😀\t😀a\n\n\r\"\"\rbc\"q\nq\",,x,y\"\"\"q\nq\"", 3, false]}
+{"fn": "split_records", "args": [",1.000,5;\"q\nq\"\"q\nq\"bc1.000,5\n\t\t\r;  😀1.000,5é ,\t\r\n日本😀é", 2, true]}
+{"fn": "split_records", "args": ["😀\"q\nq\" 日本;1.000,5\"\"\"\t\r\na,1.000,5 😀é1.000,5日本\"\"\"x,y\n\n\"q\nq\"\r\n,\"q\nq\"1.000,51.000,5\nx,ybc\rx,y é\"q\nq\"", 5, false]}
+{"fn": "split_records", "args": ["\"\r\n\r\té\"\";x,y\"\"éx,yx,y\"\"\"日本\n,\t😀\r\na", 3, true]}
+{"fn": "split_records", "args": ["\"\r\n😀\r\"q\nq\"\r\n\"q\nq\"", 2, true]}
+{"fn": "split_records", "args": ["\"q\nq\"\t bc; ", 50, true]}
+{"fn": "split_records", "args": ["\tbc\rbc\t1.000,5a日本,;😀;bc,;\"q\nq\"x,y", 1, true]}
+{"fn": "split_records", "args": [",;\"\"\"\r\r\n\r日本,\r,", 50, false]}
+{"fn": "split_records", "args": ["1.000,5ébc日本\"\na😀bc\"\"\réé", 5, true]}
+{"fn": "split_records", "args": ["\"q\nq\"é😀 \t日本\r\n,x,y;", 1, false]}
+{"fn": "split_records", "args": [",bc,\n,\ré\"x,y\"\r\r\n\tx,y日本;\n\r\n\tbcx,y1.000,5", -1, true]}
+{"fn": "split_records", "args": ["\"q\nq\",\t,\r;日本\r\n\"q\nq\"日本日本日本 \t;bc\r\n;\ta", -1, false]}
+{"fn": "split_records", "args": [",日本 \"\"a\"\"😀\n1.000,51.000,5😀é\r\n\t", 3, true]}
+{"fn": "split_records", "args": ["x,y,a\"q\nq\";", 2, false]}
+{"fn": "split_records", "args": ["😀日本a\"\"😀\"\"\"\"\"\na\na\t \tx,y; bc\"\",\"\"a\",\"q\nq\"1.000,5\"q\nq\"bc1.000,5\nabc1.000,5日本😀\r\n", 0, true]}
+{"fn": "split_records", "args": ["\rx,y日本 \r\n\n\"\"\r a\"q\nq\"\rbc\"😀,\"\"\r\n", 0, true]}
+{"fn": "split_records", "args": ["\r1.000,5x,y\r\n,x,yé", 2, true]}
+{"fn": "split_records", "args": [";\"q\nq\"a\t😀\"a\r;😀\"q\nq\"\r日本x,ya\n日本bc", 5, false]}
+{"fn": "split_records", "args": ["bc\"\"aa😀\t日本x,y\r日本a\n日本1.000,5;\" ;é😀\"\né\t\r\nbc\r\n\"", -1, false]}
+{"fn": "split_records", "args": ["\t\r\n日本bc \"aé😀\r\n;\r\n, 日本é\"q\nq\"é😀\n\r\né😀", -1, true]}
+{"fn": "split_records", "args": ["\"q\nq\"\"1.000,5 \t;\t\t\r\r\n", 2, true]}
+{"fn": "split_records", "args": ["1.000,5x,y\"bc,;\"q\nq\"\t\n\r\t\" 日本;bc\"\"\"q\nq\"a,\r\n\n😀\"q\nq\"\ré a", 2, false]}
+{"fn": "split_records", "args": ["\n\r\"q\nq\"\tx,y,\"q\nq\"\"q\nq\"\"\"  ,1.000,5\"\"日本", 2, false]}
+{"fn": "split_records", "args": ["1.000,5bc;\t\"\"日本  😀\r,\t,\t\r1.000,5\"\" 1.000,5a;a日本;é", 0, false]}
+{"fn": "split_records", "args": ["; 1.000,5é,😀;;bc\"\"q\nq\"\rax,ybcé\n\r", 2, true]}
+{"fn": "split_records", "args": ["😀1.000,5bc\"q\nq\"x,yé;\r\n\r\r\n\t,bc\r\n\n\"\"\r\n", 2, true]}
+{"fn": "split_records", "args": ["1.000,5,😀\"q\nq\" \n\r\nbcx,y\r\rx,y\"q\nq\"bcx,y日本,éx,y\n\",\t ,;\n,日本", 50, false]}
+{"fn": "split_records", "args": ["1.000,5a\r😀x,y,日本bc😀\r日本😀bc😀", 1, true]}
+{"fn": "split_records", "args": [",\t \r\"q\nq\"1.000,51.000,5\r\n😀\r\n;\n日本 日本", 50, true]}
+{"fn": "split_records", "args": ["bc😀\"\"\r\n😀😀\n\"q\nq\"", 5, false]}
+{"fn": "split_records", "args": ["\"\";bc\n\n,bc😀\r\n日本\t日本x,y é\n😀bc\t\"\"\r\na a\rbc\"\";;1.000,5😀é\"\"\r\n", -1, false]}
+{"fn": "split_records", "args": [";\"1.000,5\"\"\n😀1.000,5\t\"", 0, true]}
+{"fn": "split_records", "args": ["1.000,5\"\"aa \"q\nq\"😀;a\"q\nq\";\"q\nq\"\"q\nq\"\"\t\"q\nq\"\r\n\n1.000,5\"1.000,5x,y,\r\r\"\"\"bc\t;,", -1, false]}
+{"fn": "split_records", "args": [" ;\r\nbc;bc\t日本bc", 5, true]}
+{"fn": "split_records", "args": [";;", -1, false]}
+{"fn": "split_records", "args": ["\rbc1.000,5\"\"\n日本日本\"\"q\nq\"\r\"\"bc;😀日本  x,yéa \"bc\"\"x,y\r\n\r\né;,\r\n,\r😀\"\"a日本a", 2, false]}
+{"fn": "split_records", "args": ["", 3, false]}
+{"fn": "split_records", "args": ["\n\r\n\"q\nq\",日本abcé a ;\"\"", 0, false]}
+{"fn": "split_records", "args": ["", 2, true]}
+{"fn": "split_records", "args": ["\"q\nq\"日本é", 0, true]}
+{"fn": "split_records", "args": ["\r;\nx,y", 0, true]}
+{"fn": "split_records", "args": [" \r\na😀x,y日本", 1, true]}
+{"fn": "split_records", "args": ["é 日本😀 \"\"q\nq\",\n", 0, true]}
+{"fn": "split_records", "args": ["\n\ra\r\n\"\"bc\"q\nq\"\r\na;x,y\t\"q\nq\"x,y;bca\t", 50, false]}
+{"fn": "split_records", "args": ["", 3, true]}
+{"fn": "split_records", "args": [";\"\n\"\r", -1, false]}
+{"fn": "split_records", "args": [";\raa\"q\nq\"bc\"bc日本 ;\ra\tbcx,y\r,\"q\nq\"\"\"a,", 0, true]}
+{"fn": "split_records", "args": ["日本\"q\nq\";😀\t; 😀\"q\nq\"1.000,5日本\né a;\"\né,ax,ybc\rbcx,y\n\r\n😀1.000,5\"\"", 2, false]}
+{"fn": "split_records", "args": ["1.000,5\"q\nq\"\"q\nq\"\tx,yx,y😀; bc1.000,5😀bc\r\"\"\"\"日本1.000,5😀😀\t😀", 5, true]}
+{"fn": "split_records", "args": ["\t\"\n\"q\nq\"bc\r\n😀\"\r😀\n\"\"é1.000,5\n\",\r\n\r\"😀1.000,51.000,5\"\"é\n\"\r\n,\"\n\r\n bc1.000,51.000,5x,y\r", 0, true]}
+{"fn": "split_records", "args": ["\t;bcé bc1.000,51.000,5\"\n\" \r\n\"\"bc\"q\nq\"\n\r\n1.000,5bc;;\néééaéx,y1.000,5\"\"q\nq\"", 0, false]}
+{"fn": "split_records", "args": ["\"\"😀\"\"\tbc\r\n,\"\t\r\né1.000,5\r\n\ta\r,;\r", 0, false]}
+{"fn": "split_records", "args": ["\"q\nq\"\n\na ;\"q\nq\"a\"\"\r é;😀a\n bc\r\r\n\"q\nq\" a", 1, false]}
+{"fn": "split_records", "args": ["日本", 0, false]}
+{"fn": "split_records", "args": [";", -1, false]}
+{"fn": "split_records", "args": ["\naé\rbc\t\"q\nq\"\"a 1.000,5x,y1.000,5bcx,y\"\"a;\"\"a;\"\"\r\nax,y,\na\"q\nq\"é\r1.000,51.000,51.000,5\t\r\n", -1, true]}
+{"fn": "split_records", "args": [" \"\";\r\n\né\r\n\na\na\n\"😀, ,aa\"bc 日本 日本\t\r\né\n😀\té\"\"", 1, false]}
+{"fn": "split_records", "args": [",é😀bcx,ya\n\"", 50, true]}
+{"fn": "split_records", "args": ["😀a1.000,5\t\t\"bc😀é1.000,5\"a\"日本,\"\"é\r\n", -1, true]}
+{"fn": "split_records", "args": ["\"\"aabc a\r\n\r1.000,5", -1, true]}
+{"fn": "split_records", "args": [" \"\"\"\n\r\"q\nq\"😀;;\rx,y1.000,5\né\n\r\r\n😀x,yéx,y\tx,y日本\"\"\n\"\"\n", 50, false]}
+{"fn": "split_records", "args": ["1.000,5,\r;\"\"😀bc \r\n1.000,5é\t 😀\n \"日本bc\tx,y\n 1.000,5😀,a日本\"q\nq\";\"\"日本", 50, false]}
+{"fn": "split_records", "args": ["1.000,5\r\na日本\"\"日本x,y😀\"\"", 5, true]}
+{"fn": "split_records", "args": ["😀\"\"\r\n\r\naé", 2, true]}
+{"fn": "split_records", "args": ["x,y\ra\r\n\"\"日本bc\r日本\n😀😀\n日本\r\"q\nq\"1.000,5;a😀a1.000,5 \t\"x,ya\r\n,\"\"\nbc1.000,5日本\r\n\"\"1.000,5é", 2, false]}
+{"fn": "split_records", "args": ["😀bc😀\"\"x,ybc😀\"q\nq\"é\ré\"x,y\nbcé", 2, true]}
+{"fn": "split_records", "args": ["\r\n,aa", 50, false]}
+{"fn": "split_records", "args": ["\"\"; bc日本\"q\nq\"\"q\nq\" ;\rx,ybc\n\r\n1.000,5\r\n,;😀日本 ,\r\r\r日本é日本1.000,5bc\"\n😀,\"\"\"\"\n", 2, true]}
+{"fn": "split_records", "args": ["\t\"q\nq\"😀日本日本\r\n1.000,5\"\"\na\"q\nq\"a1.000,5\t\n\"\"\"\t\né\"x,y\n\"q\nq\"日本\" \r\nabc\"bc1.000,5\"\"bc😀", 0, true]}
+{"fn": "split_records", "args": ["a\"\"q\nq\"x,y1.000,5\t\na\r\n\nx,y\rx,y", 2, true]}
+{"fn": "split_records", "args": ["😀ébc\r\n\"\t\t😀,\r\n;,1.000,5é\r日本\n1.000,51.000,5\"\"\"\"bc1.000,5x,y x,y😀 a,bc日本\r,日本,bc;\n", 1, true]}
+{"fn": "split_records", "args": [";\n;\"\"\"\"\"\"😀bc日本\"\"é\"q\nq\"x,yx,y日本日本bc1.000,5\tbcé;日本1.000,5,\r,日本\n\r\n;a\r\na日本1.000,5😀😀", 1, true]}
+{"fn": "split_records", "args": ["\nbc\"q\nq\"日本\r,\"q\nq\"\n1.000,51.000,5日本  日本", 2, false]}
+{"fn": "split_records", "args": ["ébc\n\r\n bc \"\"x,y1.000,5bc\"q\nq\"\r\n\r😀\r\n\n\r\n\"\",", 1, false]}
+{"fn": "split_records", "args": [",\"1.000,5\r\n\t;bcé\t\"\"😀\r\r\n\"q\nq\",\"q\nq\"😀\n😀\"\"😀,1.000,5\t\t😀😀\"q\nq\";,\nbc\"\"bc\t日本,", -1, false]}
+{"fn": "split_records", "args": ["\"\"bcbca\t1.000,5bc\n😀a,\"\r\n\"\"\r😀a日本;\ta 1.000,5\"\"\"\"\"😀\"bc,a日本\r", 5, true]}
+{"fn": "split_records", "args": ["日本\rbc\"q\nq\" ,\t", 0, false]}
+{"fn": "split_records", "args": ["\r1.000,5a日本\"\"1.000,5\"; ", 5, false]}
+{"fn": "split_records", "args": ["a\"\"\"\"a日本 1.000,5bcé\"\"\n\"q\nq\"\r\nx,yé\r😀1.000,5\"q\nq\" \"1.000,5\t1.000,5\r;1.000,5\rax,y\r\n\"\"\"\",", -1, false]}
+{"fn": "split_records", "args": ["x,y,é é\r\r\n\tbcé\"\"\"\r\n;日本\r\"\"é;\r\n", -1, false]}
+{"fn": "split_records", "args": ["é\r,\n😀 \r\n1.000,51.000,5x,y\r\"\r\"\ra日本\t1.000,5😀\ra\r;\n😀\"\"a\"q\nq\" ;,", -1, true]}
+{"fn": "split_records", "args": [" \"\"bc\"q\nq\"é1.000,5😀\t\t bc1.000,5\t\"q\nq\";\"\"é\r\nébca\n\r\r\nx,y\r\n\r\nbc\";\";; 1.000,5", 50, true]}
+{"fn": "split_records", "args": ["a1.000,5😀日本é\r", 1, true]}
+{"fn": "split_records", "args": ["  \r\néé,;bcx,y😀\r\né1.000,5ax,yx,yé\r\n\"\"", 3, true]}
+{"fn": "split_records", "args": [" \r\r\n1.000,5日本\n\"\"  bc\"q\nq\"bcbc\"\"\n \"\"\r\r\n;\né😀\r\n\ta😀 a\r\n\t", -1, false]}
+{"fn": "split_records", "args": ["日本,\"q\nq\"日本1.000,5\n", 3, true]}
+{"fn": "split_records", "args": [" ,\r\n日本\r\t\r x,y日本,x,y\r1.000,5x,y bc\t\r\n;bc\r日本\t日本\t,\"q\nq\"\nabc", 5, true]}
+{"fn": "split_records", "args": ["\"a\r\nx,yx,y日本,\"\" bcabcbc\t\ta1.000,5\r\"q\nq\"\"\"\"bc ", 50, true]}
+{"fn": "split_records", "args": ["\n😀\n\n", 5, true]}
+{"fn": "split_records", "args": [",1.000,5a\rx,y\"\"\r\n\"\" bc\t", 2, true]}
+{"fn": "split_records", "args": ["é1.000,51.000,5\t,;\t1.000,5aa\r\n\t\ré\"q\nq\"x,ya\",;\"\"\na\"q\nq\"\t \"q\nq\"bc😀\"x,ya", -1, false]}
+{"fn": "split_records", "args": ["\r\n\n\"\";bc", 1, true]}
+{"fn": "split_records", "args": ["😀é\r\n\n", -1, true]}
+{"fn": "split_records", "args": ["\n;\"\"\r\nx,y\"\n\r\n\t,\"\"bc\"\"\"q\nq\"\t  \n\r1.000,5日本1.000,5,\n1.000,5\r日本\ra", 50, false]}
+{"fn": "split_records", "args": ["1.000,5日本a;\"q\nq\"日本\"q\nq\",\"q\nq\"\ré\"\"\r1.000,5x,y\"\"\"q\nq\"\na;", 1, false]}
+{"fn": "split_records", "args": ["\t\t\r\n\"\"日本\"\",a\"q\nq\"日本éx,y\tbc;a\"😀a \n", 1, true]}
+{"fn": "split_records", "args": ["\r\r\"q\nq\"x,ybc😀日本\t日本é\n日本a😀\tx,yé\r\nbc\r\n\"q\nq\"1.000,5;\"\"q\nq\"1.000,5bcx,y1.000,5,\té\"q\nq\"", 1, true]}
+{"fn": "split_records", "args": ["éx,y\"q\nq\"😀x,y,\"\"é\r\"\"1.000,5\"1.000,5bc\"日本\r\n\n\"q\nq\"\"bcé,1.000,5日本\réa\"日本", 5, true]}
+{"fn": "split_records", "args": ["; aé\t日本,\"1.000,5 \"\"a\r\n\"\"\r\n", 0, true]}
+{"fn": "split_records", "args": ["\tbc\"\"\r\"\"x,y\r\n😀;;1.000,5a;x,yx,yx,y\r\n😀1.000,5 ", 50, true]}
+{"fn": "split_records", "args": ["x,y日本\t😀\n日本\t😀;;😀,\r\r\né\"", -1, false]}
+{"fn": "split_records", "args": ["a\"\"\"\"\"q\nq\"\r1.000,5\"\"\"\"abcébc\n \t😀", -1, true]}
+{"fn": "split_records", "args": ["\n\"\";\"q\nq\"\"q\nq\",,日本,; \r\nx,y\"\"x,ya\"q\nq\"\"\"\né\"é日本\r😀\t\"q\nq\"\r\t日本\r", 5, true]}
+{"fn": "split_records", "args": ["é\"q\nq\"", -1, false]}
+{"fn": "split_records", "args": ["x,ya\"\t\n\r\nbc日本\r\nbcx,ya,é\na\"\nbc1.000,51.000,5a", 2, true]}
+{"fn": "split_records", "args": ["\t", 5, true]}
+{"fn": "split_records", "args": ["日本,1.000,5\"q\nq\"日本\n 😀\"\"\n1.000,51.000,5aax,yé😀 x,y\t1.000,5\"\r\",日本é,ééx,ya\tbcx,y", 1, true]}
+{"fn": "split_records", "args": ["\t1.000,5aa\"\"日本\r\n\"q\nq\"bcx,y;\r\n\"\"", 2, true]}
+{"fn": "split_records", "args": ["\r\r\"\r\n;a😀\"q\nq\"\t日本1.000,5日本bca; x,y,x,y\n\"😀 \t😀x,y\t", 50, false]}
+{"fn": "split_records", "args": ["é", 2, true]}
+{"fn": "split_records", "args": ["\n\nx,y\"q\nq\"\raé é,abc", 5, false]}
+{"fn": "split_records", "args": ["\t😀日本\r\"日本", 50, true]}
+{"fn": "split_records", "args": ["bc\n \r\n;\r\n 😀\r\n\n", 3, true]}
+{"fn": "split_records", "args": [";a\n\n", 1, true]}
+{"fn": "split_records", "args": ["\"日本\t\r\tax,y \tabcx,y\"é\"\t\r\n \"q\nq\";;bc日本", 5, true]}
+{"fn": "split_records", "args": ["\t", 0, true]}
+{"fn": "split_records", "args": ["\t\"\"\"q\nq\"\tx,y 1.000,51.000,5\t\r日本\r\n😀;a\n 日本;\r\t\",\"\"a1.000,5abc1.000,5é\"q\nq\"", 50, false]}
+{"fn": "split_records", "args": [" \"q\nq\"\"\"1.000,5\r\n\r\nbc\"\"é1.000,5a\t", 1, false]}
+{"fn": "split_records", "args": ["\r\n,\r😀a1.000,51.000,5\"q\nq\"bc\n\"\"\n\"\"\r\nx,y \r😀é\"bcé,,,😀é;\"\"é ;", 50, false]}
+{"fn": "split_records", "args": ["x,y\r\n\r\n,\"😀é\n😀a\tébc,1.000,5\"q\nq\"😀,\n", 50, false]}
+{"fn": "split_records", "args": ["\n日本\"日本日本é日本a;bc😀,\r\na,😀😀x,y 😀日本\r\n\t\tx,yx,y\rx,y😀\r;,é;bc\"q\nq\"", 5, true]}
+{"fn": "split_records", "args": ["é é😀 é1.000,5😀 \r1.000,5  \r\n\"\" \nx,y1.000,5\n", 2, true]}
+{"fn": "split_records", "args": ["\té1.000,5ébc\r\n\"q\nq\"ébc\t日本", 1, true]}
+{"fn": "split_records", "args": ["", 50, true]}
+{"fn": "split_records", "args": ["\n\r\n1.000,5\r\n\t\ta\"\"\n\r1.000,51.000,5a😀;\t1.000,5\r\n1.000,5", 0, false]}
+{"fn": "split_records", "args": ["\t\r,日本\r\n1.000,5😀\r\n日本;\"\"x,y\"\"\r\n日本a 😀\t1.000,5a\nx,y1.000,5x,y\r", 5, false]}
+{"fn": "split_records", "args": ["1.000,5x,y\n\";", 2, false]}
+{"fn": "split_records", "args": ["\r\n\"bc😀\n;bcé\r\nx,y\"1.000,5日本\tbc\r", -1, true]}
+{"fn": "split_records", "args": [",aé日本\t\r;😀\rx,y", 0, true]}
+{"fn": "split_records", "args": ["\" a\ra\n😀\r1.000,5😀\ra1.000,51.000,5,\n\"q\nq\"\";x,y\n\"\"\"\"q\nq\";\"q\nq\" 1.000,5\r\n1.000,5", 1, false]}
+{"fn": "split_records", "args": ["\";\nx,y1.000,5\né😀\n日本\"\r\n;\t😀\r\n日本é日本é \r,;;,a日本", 0, false]}
+{"fn": "split_records", "args": ["1.000,5\"é\"\"\r1.000,5bc\t éa\"q\nq\"😀\t\"", 2, false]}
+{"fn": "split_records", "args": ["\"\"1.000,5\n\r\n,日本éé\"😀\"\"\"x,y  é😀😀\"\t", 50, true]}
+{"fn": "split_records", "args": ["a\"x,y\na", 0, true]}
+{"fn": "split_records", "args": ["\"q\nq\"a; \n\t\t\n\n\rx,y\t\"q\nq\"\t\"ééx,y", 50, false]}
+{"fn": "split_records", "args": ["\";\t;\"\"\t,\"\r\n\r\n;\"q\nq\"\r\t,x,y\"q\nq\";bc\"x,y\"\"日本x,y\rbc", 0, false]}
+{"fn": "split_records", "args": ["\"q\nq\"\"日本日本1.000,5;x,y,bcé\t;\ra日本;é😀\"\"\"😀\"\"1.000,5\"\"bcx,y\t1.000,5日本\"q\nq\"bc,", 2, true]}
+{"fn": "split_records", "args": ["a日本;\"\",é,ax,y;\na😀\"q\nq\"日本\r\n;\n日本\t\né😀😀\r\n日本😀 😀\n", 50, false]}
+{"fn": "split_records", "args": ["bc\r\n😀\"q\nq\",\"q\nq\"\"x,y\"\"\"q\nq\"é\t\" \"\";日本\néé\"q\nq\"\", \"q\nq\"\r1.000,5😀bc\t😀;abc😀a", 1, false]}
+{"fn": "split_records", "args": ["\taé;bca\ré ;\t\"\"\t😀\"q\nq\"😀\t", 1, true]}
+{"fn": "split_records", "args": ["1.000,5,é\"\"x,y\"\r\n\"q\nq\", ;\"\t\t\"\"bc\t,\"\",\"\"1.000,5", 50, true]}
+{"fn": "split_records", "args": ["x,y\n日本😀,,1.000,5;\t\"\"\",\"\"\r\n\t \r😀\n\"q\nq\" \" ;😀\"\"é\"\"", 5, true]}
+{"fn": "split_records", "args": ["\r\r\r\n\"\"\r\n", 3, true]}
+{"fn": "split_records", "args": ["éé,,\n;abc\n😀\t\r😀\"日本😀\t\t日本 \"q\nq\"😀a\"q\nq\"\n\"\"\"\"\"\"é日本\"\"a日本\"\"1.000,5\"q\nq\"😀", 2, false]}
+{"fn": "split_records", "args": ["bc", 0, true]}
+{"fn": "split_records", "args": ["a\n1.000,5", 1, true]}
+{"fn": "split_records", "args": ["\"\r1.000,5;\"é;1.000,5;\n1.000,5\"\raé1.000,5\nx,y\t\rbcbc \t\"\"éé\té\n;\r\n\rééabc", 50, false]}
+{"fn": "split_records", "args": ["\"\"a,bcé😀é1.000,5,\"q\nq\"\r\n,é日本,\"\"\n,\n1.000,5, 日本 ;\"\"\"\r😀;\"q\nq\"\nbc😀bcx,y;x,y", 5, true]}
+{"fn": "split_records", "args": ["😀1.000,5\t日本 \r;\n1.000,5a\r\né日本\r\n\n\r\nx,y日本 \"\"bc\r\r\naébc1.000,5;,\"\"\r\nbc1.000,5\r", -1, false]}
+{"fn": "split_records", "args": ["1.000,5é\r, 日本 😀\"\"\t1.000,5 \"q\nq\"\"q\nq\"\r\n日本1.000,5😀bcé\"q\nq\"bc\r,\ta日本bc\r\n1.000,5bc,", -1, true]}
+{"fn": "split_records", "args": ["\t\nx,y\"\r\n😀\"x,y\"\"\"\"\n\"bc\"\"q\nq\" \"\"bc1.000,5,\r\"\";日本\r\t\", 😀\"q\nq\"😀\"q\nq\"\r\n", 5, false]}
+{"fn": "split_records", "args": ["\tx,ybcbc\"\"bc😀\"\",\"q\nq\"é日本1.000,5 ,x,y1.000,5bcx,y\"q\nq\"\nbc", 2, true]}
+{"fn": "split_records", "args": [" \"\"😀,\"q\nq\"\"\"é日本\r\n\r;, \"😀\r\"\n日本é;bc\"\n \"\"bc日本a1.000,5\r\"\"", 3, true]}
+{"fn": "split_records", "args": [",\"\"\"\"\r ,\"q\nq\"😀aa x,y;\";\"\"1.000,5\n\"\",1.000,5", 3, false]}
+{"fn": "split_records", "args": ["\t;x,y1.000,5\t😀\"\"\n\"\"x,y\"q\nq\"\"q\nq\"\"\"1.000,5é; \r\t, éx,ybca,x,y\"q\nq\",", -1, false]}
+{"fn": "split_records", "args": ["日本\"\"q\nq\"日本 \"bc", 2, true]}
+{"fn": "split_records", "args": ["\"\"bc\r\n \t日本\t1.000,5\r\n\t\r é\"\";\"x,y\"\"\r\n\r\n 😀日本abcéa\"q\nq\"  bc", 2, false]}
+{"fn": "split_records", "args": ["😀\"\";\r\n \"\";\"q\nq\"", 5, true]}
+{"fn": "split_records", "args": ["\téé 😀é", 3, false]}
+{"fn": "split_records", "args": ["x,y😀\"q\nq\"\t1.000,5x,y\r\n\"x,y \t,\t;bc1.000,5\r\n\"\"\r😀\r\"q\nq\"1.000,5é\r\n1.000,5bc1.000,5,\t\n\r1.000,5\n,日本", 2, true]}
+{"fn": "split_records", "args": ["\r\nx,ybc😀\"q\nq\"éx,y;;\rbc\n😀é\t;\"\"\ré\tbc日本日本,\r\"\r\n;,\r,", 1, true]}
+{"fn": "split_records", "args": [" , ;é\t\r\n😀x,y\t  bc\ta\t\r\n,;a\r😀日本\rbcx,yé", 5, true]}
+{"fn": "split_records", "args": ["日本\";;a\né\r \"\"\r\"\"1.000,5\r日本\nx,y\r日本;", 50, true]}
+{"fn": "split_records", "args": ["x,ybc 日本😀\"\"\r\n\t,\n\"x,yx,y\r;\"q\nq\",\"q\nq\"1.000,5\"😀\r \"\"😀\"\",\r😀\t\r\n😀,;bc,\t\r\n\"\"", 50, true]}
+{"fn": "split_records", "args": ["日本\r\n\"\"x,y\"\", 日本", 50, false]}
+{"fn": "split_records", "args": ["😀\"\"\r\"\"日本1.000,5bcbcx,y\"\",日本\"\"\r\n\"\"\"q\nq\"日本a\r\n1.000,5\"\"\"\"\r\" \"q\nq\"日本x,y", 50, true]}
+{"fn": "split_records", "args": [";;\t😀bcébc\r\n\n1.000,5\n1.000,5,", -1, true]}
+{"fn": "split_records", "args": [",\nx,y\"q\nq\"éaa😀", 50, false]}
+{"fn": "split_records", "args": ["1.000,5", -1, true]}
+{"fn": "split_records", "args": [",\r\n,日本\"q\nq\"é😀a1.000,5\"😀a\r;\r\n\"\tx,y", 1, true]}
+{"fn": "split_records", "args": ["😀é\r\n\rx,y\t\"\"\"\rbc日本\r😀x,y日本é,", 0, false]}
+{"fn": "split_records", "args": ["x,y\n\r😀", 5, false]}
+{"fn": "split_records", "args": [",\n日本\"q\nq\";\rx,y \r\n1.000,5é😀\"\";😀\t;1.000,5a\"q\nq\"\r\n 😀\"\"", 1, true]}
+{"fn": "split_records", "args": ["1.000,5\"\"bc\n\"\"x,y\na1.000,5\n", -1, false]}
+{"fn": "split_records", "args": ["é1.000,5x,y日本éx,y;\"\"\r bcx,y\"q\nq\"😀a,\t1.000,5\ra1.000,5 \"\r\t\t,ax,y\n\r\na,日本", 1, true]}
+{"fn": "split_records", "args": ["\rx,ya\"\r\n日本  \r\"x,ya日本\r\n\"日本\"\",1.000,5\n,bc \r\né日本é \"q\nq\"\t\né😀\ré\"", -1, false]}
+{"fn": "split_records", "args": ["1.000,5a\"\",日本日本1.000,5\r\t\r\n\"q\nq\"1.000,5\";\r\"x,y日本,\t\n", 2, false]}
+{"fn": "split_records", "args": ["\"\"bc\r\n\t,;\n\r\n ;\t\r\n1.000,5aé", 3, false]}
+{"fn": "split_records", "args": ["\"😀;aa\r\t\"éébc\"q\nq\" 😀,😀,\n", 1, true]}
+{"fn": "split_records", "args": ["\"\"\t,\té😀é\r\né,\"\"bca;", 1, true]}
+{"fn": "split_records", "args": ["\n", 1, true]}
+{"fn": "split_records", "args": [";日本 \r\n", 1, false]}
+{"fn": "split_records", "args": ["\"\"bc\r\"q\nq\"é;\"\r\n\"\"\t\"\r\nbc日本;bc\"a,;😀\r\n\"\"日本\"q\nq\"é\r\né;\n;\"q\nq\"\n", 5, false]}
+{"fn": "split_records", "args": [",\r\n\"\"1.000,5😀\"😀\néabca\"\"\r\"\"\t, bc;\"😀a1.000,5", 50, true]}
+{"fn": "split_records", "args": ["a;\t\"\"bc;;x,ybc1.000,5,1.000,5a\"a,日本\r\r\n \n", 0, true]}
+{"fn": "split_records", "args": [";", 5, true]}
+{"fn": "split_records", "args": ["1.000,5a\n\"\"q\nq\"x,y\"q\nq\"bcé;abc日本\r\n\"q\nq\"\taéx,y\n;日本\ra\t,\"q\nq\"1.000,5\"q\nq\"\"a\r\nx,y\t ", -1, false]}
+{"fn": "split_records", "args": ["a\"q\nq\"\r\na日本\r\n\r\t\"q\nq\",😀x,y\r\n", 5, true]}
+{"fn": "split_records", "args": [";", 1, false]}
+{"fn": "split_records", "args": ["1.000,5\"\rbc1.000,5 1.000,5\ra\"1.000,5\r\r\n,\t\n\r\"\"\"x,y\r\"\"a1.000,5\"q\nq\",", 0, true]}
+{"fn": "split_records", "args": ["日本é", 1, true]}
+{"fn": "split_records", "args": ["\"q\nq\"\n日本;\nbc \n\"q\nq\"a\"\"日本,\"\"", 50, false]}
+{"fn": "split_records", "args": ["😀x,y\"\"\n\r\naaa\"\"q\nq\"a\"\",bc\n\t\r日本\"\"1.000,5,\"\"q\nq\"", -1, true]}
+{"fn": "split_records", "args": [";\"\n😀😀日本日本;日本 a,x,y\"q\nq\"x,y\"bcx,y,;\t\ra😀aé\"x,y", 5, true]}
+{"fn": "split_records", "args": ["é\"\"éé\tébc\tbc", 2, false]}
+{"fn": "split_records", "args": ["\né😀1.000,51.000,5\"\"日本1.000,5\" ,\"1.000,5,;bc,", 0, false]}
+{"fn": "split_records", "args": ["bc1.000,51.000,5bcbc\n\t\tbc1.000,5x,y日本\r\nbc  ", 3, true]}
+{"fn": "split_records", "args": ["x,y\"q\nq\"bc\r\t😀\"\"\n1.000,5日本,\"q\nq\"\r\n,bcx,y\n😀 x,y😀\"q\nq\"\n\t; ,\r\"q\nq\";;", 0, true]}
+{"fn": "split_records", "args": ["\n\"q\nq\"\t, \"\"\r\n日本,,\"\", 日本a\"", 1, true]}
+{"fn": "split_records", "args": ["\"\"q\nq\"\t1.000,5\n;\"\"\ta\"\"\"\"日本\rx,y1.000,5日本\r\na,😀\"éax,ybcbc\"\"\"\"\t\r\tbc", 2, true]}
+{"fn": "split_records", "args": ["\t日本日本日本\"\"q\nq\"😀\"q\nq\"x,y;éx,y\n\"😀", 2, true]}
+{"fn": "split_records", "args": ["\"\"bc日本\t\"q\nq\"\"q\nq\"é,1.000,5;\n,日本\"\"", 0, true]}
+{"fn": "split_records", "args": ["bc\r\n1.000,5,;😀\n\"\"日本😀;\t,\"q\nq\"\t1.000,5;é日本日本\n1.000,5a,\"q\nq\"\nx,y; \"q\nq\"1.000,5", -1, false]}
+{"fn": "split_records", "args": [";aa\"q\nq\"\r\na;😀\"q\nq\"a\ré\r,\"q\nq\"1.000,5日本é", -1, false]}
+{"fn": "split_records", "args": [" bc\"q\nq\"\n,\"\nbca\"q\nq\"\"\"\r\"\rx,y;日本x,ybc\t日本\r,\t日本;日本日本", 1, false]}
+{"fn": "split_records", "args": ["\"bc\"\"\r\n\n\n\"\n 日本1.000,5x,y\";\"\"a ;\r\"\"a日本😀日本\"\"\n1.000,5\r\n日本,\"\r\r\r\n😀\t\"日本\"", 2, true]}
+{"fn": "split_records", "args": ["\"q\nq\"1.000,51.000,5a \" 日本;x,y\"\"a\rx,y,\t\r\n;\"\"\r\t, \tx,ybc\n\n\r\n日本,1.000,5😀\"q\nq\";\r;", -1, true]}
+{"fn": "split_records", "args": ["a,\t\"q\nq\"1.000,5\r\r\n;\"q\nq\"\tbca日本;,1.000,5\"q\nq\"é\r\n\";1.000,5\r日本😀,日本\n 1.000,5\"\"bc日本;\t\t\"q\nq\"", 1, false]}
+{"fn": "split_records", "args": ["", 50, true]}
+{"fn": "split_records", "args": ["\t\"\"\"\"1.000,5\";", 5, false]}
+{"fn": "split_records", "args": [",1.000,5\r,abcbc\"q\nq\" \r\n1.000,5\"q\nq\"\"1.000,5\t😀日本😀a\r\n  bc\n\"q\nq\"", 50, false]}
+{"fn": "split_records", "args": ["\" \"\"\t\"q\nq\" \"x,yé\t\"q\nq\"\n;aa😀1.000,5\"x,y  1.000,5;\na1.000,5😀日本", -1, true]}
+{"fn": "split_records", "args": ["bc\"\"\t\"\r\n\r ", 5, false]}

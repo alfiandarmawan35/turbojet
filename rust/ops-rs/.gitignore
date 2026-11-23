@@ -1,0 +1,10 @@
+target/
+*.node
+pkg/
+.rust-anything/
+*.so
+*.pyd
+__pycache__/
+# Modul jadi ikut di-commit agar server Frappe tak perlu toolchain Rust (lihat rust/README.md).
+!python/*/_native.abi3.so
+!python/*/_native.pyd

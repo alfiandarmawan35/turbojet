@@ -1,0 +1,238 @@
+{
+ "actions": [],
+ "creation": "2026-11-23 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "operation",
+  "feature",
+  "status",
+  "quota_state",
+  "quota_amount",
+  "quota_period",
+  "request_id",
+  "section_io",
+  "input_file",
+  "output_file",
+  "errors_file",
+  "spec_json",
+  "result_json",
+  "section_run",
+  "attempt",
+  "max_attempts",
+  "lease_owner",
+  "lease_until",
+  "next_attempt_at",
+  "engine_path",
+  "engine_version",
+  "rows_read",
+  "rows_valid",
+  "rows_rejected",
+  "error_code",
+  "error_message"
+ ],
+ "fields": [
+  {
+   "fieldname": "operation",
+   "fieldtype": "Data",
+   "label": "Operation",
+   "reqd": 1,
+   "in_list_view": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "feature",
+   "fieldtype": "Data",
+   "label": "Feature",
+   "reqd": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "read_only": 1,
+   "options": "queued\nleased\nrunning\npublishing\ndone\nretry_wait\nfailed\ncancel_requested\ncancelled",
+   "default": "queued"
+  },
+  {
+   "fieldname": "quota_state",
+   "fieldtype": "Select",
+   "label": "Quota State",
+   "options": "none\nreserved\ncommitted\nreleased",
+   "default": "none",
+   "read_only": 1
+  },
+  {
+   "fieldname": "quota_amount",
+   "fieldtype": "Int",
+   "label": "Quota Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "quota_period",
+   "fieldtype": "Data",
+   "label": "Quota Period",
+   "read_only": 1
+  },
+  {
+   "fieldname": "request_id",
+   "fieldtype": "Data",
+   "label": "Request ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_io",
+   "fieldtype": "Section Break",
+   "label": "Input / Output"
+  },
+  {
+   "fieldname": "input_file",
+   "fieldtype": "Attach",
+   "label": "Input File",
+   "read_only": 1
+  },
+  {
+   "fieldname": "output_file",
+   "fieldtype": "Attach",
+   "label": "Output File",
+   "read_only": 1
+  },
+  {
+   "fieldname": "errors_file",
+   "fieldtype": "Attach",
+   "label": "Errors File",
+   "read_only": 1
+  },
+  {
+   "fieldname": "spec_json",
+   "fieldtype": "Code",
+   "label": "Spec",
+   "options": "JSON",
+   "read_only": 1
+  },
+  {
+   "fieldname": "result_json",
+   "fieldtype": "Code",
+   "label": "Result",
+   "options": "JSON",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_run",
+   "fieldtype": "Section Break",
+   "label": "Execution"
+  },
+  {
+   "fieldname": "attempt",
+   "fieldtype": "Int",
+   "label": "Attempt",
+   "read_only": 1
+  },
+  {
+   "fieldname": "max_attempts",
+   "fieldtype": "Int",
+   "label": "Max Attempts",
+   "read_only": 1
+  },
+  {
+   "fieldname": "lease_owner",
+   "fieldtype": "Data",
+   "label": "Lease Owner",
+   "read_only": 1
+  },
+  {
+   "fieldname": "lease_until",
+   "fieldtype": "Datetime",
+   "label": "Lease Until",
+   "read_only": 1
+  },
+  {
+   "fieldname": "next_attempt_at",
+   "fieldtype": "Datetime",
+   "label": "Next Attempt At",
+   "read_only": 1
+  },
+  {
+   "fieldname": "engine_path",
+   "fieldtype": "Data",
+   "label": "Engine Path",
+   "read_only": 1
+  },
+  {
+   "fieldname": "engine_version",
+   "fieldtype": "Data",
+   "label": "Engine Version",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rows_read",
+   "fieldtype": "Int",
+   "label": "Rows Read",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rows_valid",
+   "fieldtype": "Int",
+   "label": "Rows Valid",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rows_rejected",
+   "fieldtype": "Int",
+   "label": "Rows Rejected",
+   "read_only": 1
+  },
+  {
+   "fieldname": "error_code",
+   "fieldtype": "Data",
+   "label": "Error Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "error_message",
+   "fieldtype": "Small Text",
+   "label": "Error Message",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-23 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TurboJet",
+ "name": "TurboJet Job",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "TurboJet Admin",
+   "read": 1,
+   "report": 1,
+   "export": 1
+  },
+  {
+   "role": "TurboJet Member",
+   "read": 1,
+   "if_owner": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "autoname": "TJ-.YYYY.-.#####",
+ "track_changes": 0
+}

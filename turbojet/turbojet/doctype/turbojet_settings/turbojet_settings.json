@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "creation": "2026-11-23 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "active_plan",
+  "entitlement_version",
+  "default_max_attempts",
+  "lease_seconds"
+ ],
+ "fields": [
+  {
+   "fieldname": "active_plan",
+   "fieldtype": "Link",
+   "label": "Active Plan",
+   "options": "TurboJet Plan"
+  },
+  {
+   "fieldname": "entitlement_version",
+   "fieldtype": "Int",
+   "label": "Entitlement Version",
+   "read_only": 1
+  },
+  {
+   "fieldname": "default_max_attempts",
+   "fieldtype": "Int",
+   "label": "Max Attempts per Job",
+   "default": "3"
+  },
+  {
+   "fieldname": "lease_seconds",
+   "fieldtype": "Int",
+   "label": "Lease Seconds",
+   "default": "120"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-23 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TurboJet",
+ "name": "TurboJet Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1
+  },
+  {
+   "role": "TurboJet Admin",
+   "read": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "issingle": 1
+}

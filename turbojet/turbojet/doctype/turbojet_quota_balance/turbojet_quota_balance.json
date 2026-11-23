@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "creation": "2026-11-23 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "feature",
+  "period",
+  "granted",
+  "reserved",
+  "used"
+ ],
+ "fields": [
+  {
+   "fieldname": "feature",
+   "fieldtype": "Data",
+   "label": "Feature",
+   "reqd": 1,
+   "in_list_view": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "period",
+   "fieldtype": "Data",
+   "label": "Period (YYYY-MM)",
+   "reqd": 1,
+   "in_list_view": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "granted",
+   "fieldtype": "Int",
+   "label": "Granted",
+   "in_list_view": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "reserved",
+   "fieldtype": "Int",
+   "label": "Reserved",
+   "in_list_view": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "used",
+   "fieldtype": "Int",
+   "label": "Used",
+   "in_list_view": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-23 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TurboJet",
+ "name": "TurboJet Quota Balance",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "report": 1,
+   "export": 1
+  },
+  {
+   "role": "TurboJet Admin",
+   "read": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "autoname": "format:QB-{feature}-{period}",
+ "track_changes": 0
+}

@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "creation": "2026-11-23 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "user",
+  "operation",
+  "client_key",
+  "input_hash",
+  "result_doctype",
+  "result_name",
+  "expires_at"
+ ],
+ "fields": [
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User",
+   "reqd": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "operation",
+   "fieldtype": "Data",
+   "label": "Operation",
+   "reqd": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "client_key",
+   "fieldtype": "Data",
+   "label": "Client Key",
+   "reqd": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "input_hash",
+   "fieldtype": "Data",
+   "label": "Input Hash",
+   "reqd": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "result_doctype",
+   "fieldtype": "Data",
+   "label": "Result DocType",
+   "read_only": 1
+  },
+  {
+   "fieldname": "result_name",
+   "fieldtype": "Data",
+   "label": "Result Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "expires_at",
+   "fieldtype": "Datetime",
+   "label": "Expires At",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-23 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "TurboJet",
+ "name": "TurboJet Idempotency Key",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "delete": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
