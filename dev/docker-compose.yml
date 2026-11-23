@@ -1,0 +1,59 @@
+# Bench Frappe lokal untuk uji app ini (BUKAN produksi). Lihat dev/README.md.
+#   bash dev/bench.sh up        # nyalakan + buat site + install-app (sekali)
+#   bash dev/bench.sh smoke     # uji alur job end-to-end
+#   bash dev/bench.sh down      # matikan (data tetap di volume), `down -v` untuk hapus total
+name: turbojet-dev
+
+x-frappe: &frappe
+  image: ${FRAPPE_IMAGE:-frappe/erpnext:v16.60.0}
+  working_dir: /home/frappe/frappe-bench
+  volumes:
+    - sites:/home/frappe/frappe-bench/sites
+    - ..:/home/frappe/frappe-bench/apps/turbojet
+  environment:
+    TURBOJET_APP: turbojet
+  depends_on: [db, redis-cache, redis-queue]
+  # app dipasang tanpa pip: cukup .pth ke folder app (tanpa jaringan, langsung ikut perubahan source)
+  entrypoint:
+    - bash
+    - -c
+    - |
+      SP=$$(/home/frappe/frappe-bench/env/bin/python -c 'import site; print(site.getsitepackages()[0])')
+      echo /home/frappe/frappe-bench/apps/$$TURBOJET_APP > $$SP/$$TURBOJET_APP.pth
+      exec "$$@"
+    - --
+
+services:
+  db:
+    image: mariadb:11.8
+    command: [--character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci, --skip-character-set-client-handshake]
+    environment:
+      MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-admin}
+    volumes: [db:/var/lib/mysql]
+    healthcheck:
+      test: [CMD, healthcheck.sh, --connect, --innodb_initialized]
+      interval: 5s
+      retries: 30
+
+  redis-cache:
+    image: redis:7-alpine
+  redis-queue:
+    image: redis:7-alpine
+
+  backend:
+    <<: *frappe
+    command: [/home/frappe/frappe-bench/env/bin/gunicorn, --chdir=/home/frappe/frappe-bench/sites, --bind=0.0.0.0:8000,
+              --threads=4, --workers=2, --worker-class=gthread, --timeout=120, frappe.app:application]
+    ports: ["${TURBOJET_PORT:-8090}:8000"]
+
+  worker:
+    <<: *frappe
+    command: [bench, worker, --queue, "long,default,short"]
+
+  scheduler:
+    <<: *frappe
+    command: [bench, schedule]
+
+volumes:
+  db:
+  sites:

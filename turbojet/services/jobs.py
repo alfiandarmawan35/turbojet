@@ -136,13 +136,14 @@ def _acquire_lease(tj_job):
 
 def _execute(tj_job, attempt):
     job = frappe.get_doc("TurboJet Job", tj_job)
-    attempt_dir = frappe.get_site_path("private", "turbojet_work", tj_job, f"attempt-{attempt}")
+    # absolut: engine berjalan dengan cwd=attempt_dir, path relatif site akan salah arah
+    attempt_dir = os.path.abspath(frappe.get_site_path("private", "turbojet_work", tj_job, f"attempt-{attempt}"))
     os.makedirs(attempt_dir, exist_ok=True)
     spec_path = os.path.join(attempt_dir, "job.json")
     with open(spec_path, "w", encoding="utf-8") as fh:
         fh.write(job.spec_json)
     out_dir = os.path.join(attempt_dir, "out")
-    input_path = frappe.get_doc("File", {"file_url": job.input_file}).get_full_path()
+    input_path = os.path.abspath(frappe.get_doc("File", {"file_url": job.input_file}).get_full_path())
     max_seconds = json.loads(job.spec_json).get("limits", {}).get(
         "max_seconds", contract.DEFAULT_LIMITS["max_seconds"]
     )
