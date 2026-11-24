@@ -1,0 +1,17 @@
+# Layanan template: satu instance per app, mis. `agen@kasir_kapal` membaca ~/.config/agen/kasir_kapal.env.
+# Butuh linger (`sudo loginctl enable-linger $USER`) agar jalan tanpa login dan setelah reboot.
+[Unit]
+Description=Agen Claude Code mandiri: %i
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+EnvironmentFile=%h/.config/agen/%i.env
+ExecStart=/usr/bin/env bash %h/.local/bin/agen.sh
+Restart=on-failure
+RestartSec=300
+Environment=PATH=%h/.local/bin:/usr/local/bin:/usr/bin:/bin
+
+[Install]
+WantedBy=default.target

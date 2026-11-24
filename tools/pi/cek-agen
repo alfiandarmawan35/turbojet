@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+# Ringkasan status agen mandiri. HANYA MEMBACA (tidak mengubah apa pun).
+#   cek-agen            # daftar agen yang terpasang
+#   cek-agen <nama>     # rincian satu agen
+CFG=~/.config/agen
+if [ -z "${1:-}" ]; then
+  echo "== Agen terpasang (~/.config/agen/*.env)"
+  for f in "$CFG"/*.env; do
+    [ -e "$f" ] || { echo "(belum ada)"; exit 0; }
+    n=$(basename "$f" .env); echo "- $n: $(systemctl --user is-active "agen@$n") / $(systemctl --user is-enabled "agen@$n" 2>/dev/null)"
+  done
+  exit 0
+fi
+N="$1"; [ -f "$CFG/$N.env" ] || { echo "tidak ada $CFG/$N.env"; exit 1; }
+set -a; . "$CFG/$N.env"; set +a
+AGEN_PROGRES="${AGEN_PROGRES:-PROGRES.md}"
+cd "$AGEN_DIR" || exit 1
+echo "== Layanan agen@$N: $(systemctl --user is-active "agen@$N") / $(systemctl --user is-enabled "agen@$N" 2>/dev/null) | sejak: $(systemctl --user show "agen@$N" -p ActiveEnterTimestamp --value)"
+P=""; for p in $(pgrep -f "claude -p"); do [ "$(readlink /proc/$p/cwd 2>/dev/null)" = "$AGEN_DIR" ] && { P=$p; break; }; done
+[ -n "$P" ] && echo "== Claude bekerja: pid $P, lama putaran $(ps -o etime= -p "$P" | tr -d ' ')" || echo "== Claude: tidak sedang jalan (jeda/berhenti)"
+[ -f .agen/STOP ] && echo "!! .agen/STOP ada (agen akan berhenti)"
+echo; echo "== agen.log (8 baris terakhir)"; tail -8 .agen/agen.log 2>/dev/null
+B=$(git branch --show-current)
+echo; echo "== Git: $B | belum di-commit: $(git status --porcelain | wc -l) berkas"
+git log --oneline -8 2>/dev/null
+echo "terakhir di origin: $(git log -1 --format='%h %cr — %s' "origin/$B" 2>/dev/null || echo 'belum ada push')"
+if [ -n "${AGEN_CHECKLIST:-}" ] && [ -f "$AGEN_CHECKLIST" ]; then
+  echo; echo "== Daftar centang: $(grep -c '| \[x\]' "$AGEN_CHECKLIST") selesai, $(grep -c '| \[-\]' "$AGEN_CHECKLIST") mustahil, $(grep -c '| \[ \]' "$AGEN_CHECKLIST") belum"
+fi
+echo; echo "== $AGEN_PROGRES"; sed -n '1,60p' "$AGEN_PROGRES" 2>/dev/null
+echo; echo "== Aktivitas terakhir Claude (10 aksi)"
+J=$(ls -t ~/.claude/projects/"$(echo "$AGEN_DIR" | sed 's#[/_.]#-#g')"/*.jsonl 2>/dev/null | head -1)
+[ -n "$J" ] && python3 - "$J" <<'PY'
+import json, sys
+from datetime import datetime
+def w(t):
+    try: return datetime.fromisoformat(t.replace("Z", "+00:00")).astimezone().strftime("%H:%M:%S")
+    except Exception: return "--:--:--"
+acts = []
+for line in open(sys.argv[1], encoding="utf-8", errors="replace"):
+    try: d = json.loads(line)
+    except Exception: continue
+    m = d.get("message") or {}
+    if d.get("type") != "assistant" or not isinstance(m.get("content"), list): continue
+    for c in m["content"]:
+        if c.get("type") == "tool_use":
+            i = c.get("input", {}); s = i.get("description") or i.get("command") or i.get("file_path") or i.get("pattern") or ""
+            acts.append(f'{w(d.get("timestamp",""))} {c["name"]}: {str(s).splitlines()[0][:110] if s else ""}')
+        elif c.get("type") == "text" and c.get("text", "").strip():
+            acts.append(f'{w(d.get("timestamp",""))} (teks) {c["text"].strip().splitlines()[0][:110]}')
+print("\n".join(acts[-10:]) or "(belum ada)")
+PY

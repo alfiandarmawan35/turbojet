@@ -7,7 +7,7 @@ Template resmi pembuatan aplikasi kita: **Frappe v16 + engine Python/Rust (rust-
 | `template/` | app template `turbojet`: paket Frappe `turbojet/`, crate Rust `rust/`, `bench/`, bench Docker `dev/`, tes engine (59) |
 | `skill/` | skill Claude `/turbojet` (`SKILL.md`, `scripts/buat_app.py`); `~/.claude/skills/turbojet` = junction ke sini |
 | `apps/` | app turunan yang dibuat di dalam monorepo |
-| `tools/pi/` | perangkat agen mandiri di Orange Pi (pelari, layanan systemd, pemeriksa `/cek-pidpos`) |
+| `tools/pi/` | agen Claude Code mandiri generik untuk mesin Linux selalu-menyala (pelari, layanan systemd `agen@<nama>`, pemeriksa `/cek-agen`) |
 | `KONSEP_TURBOJET_FRAPPE_RUST.md` | konsep v2.1 |
 
 ```bash

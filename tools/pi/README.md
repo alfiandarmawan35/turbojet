@@ -1,15 +1,31 @@
-# Perangkat Orange Pi (agen mandiri)
+# tools/pi — agen Claude Code mandiri
 
-Agar Claude Code di Orange Pi bisa menyelesaikan pekerjaan panjang tanpa laptop dan tanpa browser.
+Menjalankan Claude Code tanpa pengawasan di mesin Linux yang selalu menyala (mis. Orange Pi / Raspberry Pi / VPS)
+sampai sebuah brief tugas tuntas — tanpa laptop, tanpa browser. Satu layanan systemd per app.
 
 | Berkas | Fungsi |
 |---|---|
-| `agen_pi.sh` | pelari: `claude -p … --permission-mode bypassPermissions` berulang sampai `PROGRES.md` berisi `STATUS: SELESAI` atau ada `.agen/STOP`; jeda 30 menit bila kena limit. Ditaruh di `tools/` folder app. |
-| `pidpos-agen.service` | layanan systemd user (linger aktif → jalan tanpa login, ikut menyala saat reboot bila di-enable) |
-| `cek-pidpos` | pemeriksa HANYA MEMBACA: layanan, putaran, git/push, endpoint x/369, PROGRES, kontainer, 10 aksi terakhir Claude (jam WIB) |
-| `cek-pidpos.md` | perintah Claude/Orca `/cek-pidpos` (merangkum keluaran pemeriksa) |
-| `pasang_di_pi.sh` | memasang tiga berkas terakhir ke `~/.local/bin`, `~/.claude/commands`, `~/.config/systemd/user` |
+| `agen.sh` | pelari: `claude -p … --permission-mode bypassPermissions` berulang sampai berkas progres berisi `STATUS: SELESAI` atau ada `.agen/STOP`; jeda bila kena limit/kuota |
+| `agen@.service` | layanan template systemd user; `agen@<nama>` membaca `~/.config/agen/<nama>.env` |
+| `contoh.env` | semua setelan (folder repo, brief, progres, branch, daftar centang, model, jeda, prompt) |
+| `cek-agen` | pemeriksa HANYA MEMBACA: layanan, putaran, git/push, daftar centang, progres, 10 aksi terakhir Claude |
+| `cek-agen.md` | perintah Claude Code `/cek-agen [nama]` (merangkum keluaran pemeriksa) |
+| `pasang.sh` | memasang semuanya + `pasang.sh buat <nama> <folder>` untuk membuat setelan agen |
 
-Pola kerja: brief `TUGAS_*.md` + `PROGRES.md` (ingatan antar-sesi) di repo app, branch kerja sendiri, commit + push
-berkala, jangan push ke `master`/`main`. Model = bawaan Claude Code di Pi (lewat 9Router).
-Saat ini disetel untuk PID POS (`~/work/proyek/pid_pos_tj`); untuk app lain ganti nama layanan, folder, dan prompt.
+## Pakai
+
+```bash
+bash tools/pi/pasang.sh
+bash tools/pi/pasang.sh buat kasir_kapal ~/work/kasir_kapal TUGAS.md PROGRES.md agen
+systemctl --user enable --now agen@kasir_kapal
+cek-agen kasir_kapal            # atau /cek-agen kasir_kapal di Claude Code
+systemctl --user stop agen@kasir_kapal
+```
+
+## Pola kerja
+- Repo app berisi brief `TUGAS.md` (tujuan, definisi selesai, aturan) dan `PROGRES.md` (ingatan antar-sesi:
+  langkah berikut yang persis, masalah, pertanyaan untuk user). Agen membaca keduanya di tiap putaran.
+- Agen bekerja di branch sendiri, commit + push berkala, tidak pernah push ke `main`/`master`.
+- **Peringatan**: `bypassPermissions` = Claude menjalankan perintah apa pun tanpa bertanya. Pakai hanya di mesin
+  khusus, tulis batasan jelas di brief (apa yang tidak boleh disentuh), dan jangan taruh rahasia di repo.
+- Butuh Claude Code terpasang dan sudah login di mesin itu, serta linger (`sudo loginctl enable-linger $USER`).

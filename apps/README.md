@@ -7,5 +7,5 @@ python -I -X utf8 skill/scripts/buat_app.py --judul "Kasir Kapal"     # -> apps/
 ```
 
 Tiap app berdiri sendiri (`pyproject.toml`, `dev/` bench Docker, `rust/`, tes). Perbaikan yang berlaku umum
-dikerjakan di `template/` dulu lalu dibawa ke app. App yang butuh repo sendiri (mis. PID POS,
-github alfiandarmawan35/pid_pos_tj) dibuat dengan `--tujuan <folder di luar repo>`.
+dikerjakan di `template/` dulu lalu dibawa ke app. App yang butuh repo sendiri dibuat dengan
+`--tujuan <folder di luar repo>` (hasilnya monorepo sendiri).

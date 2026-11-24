@@ -79,7 +79,7 @@ def write_monorepo(dest, name, title, args):
             "```\n"
         ),
         "docs/README.md": "# docs\n\nKonsep, keputusan, dan brief kerja app ini. `KONSEP_TURBOJET_FRAPPE_RUST.md` = konsep template asal.\n",
-        "tools/README.md": "# tools\n\nSkrip operasional monorepo (deploy, impor data, agen otomatis). Perangkat agen Orange Pi: lihat monorepo TurboJet `tools/pi/`.\n",
+        "tools/README.md": "# tools\n\nSkrip operasional monorepo (deploy, impor data, agen otomatis). Agen Claude Code mandiri: lihat monorepo TurboJet `tools/pi/`.\n",
     }
     n = 0
     for rel, text in files.items():

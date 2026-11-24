@@ -46,7 +46,7 @@ Teruji 23-11: app "Kasir Kapal" hasil skrip → 59/59 Windows (new & old) + Linu
 | Branch | `main`. Selalu di-push ke origin; cek `git log --oneline -5` |
 | Konsep v2.1 | `KONSEP_TURBOJET_FRAPPE_RUST.md` (akar repo) — baca bagian terkait sebelum mendesain |
 | Skill | `skill/` di repo ini (`SKILL.md`, `scripts/buat_app.py`); `~/.claude/skills/turbojet` = junction ke folder ini, jadi edit skill = edit repo |
-| Monorepo | `template/` (app template), `skill/` (skill ini), `apps/` (app turunan di monorepo), `tools/pi/` (agen mandiri Orange Pi: pelari, systemd, `/cek-pidpos`), `KONSEP_TURBOJET_FRAPPE_RUST.md` |
+| Monorepo | `template/` (app template), `skill/` (skill ini), `apps/` (app turunan di monorepo), `tools/pi/` (agen Claude Code mandiri generik: `agen.sh`, `agen@.service`, `cek-agen` + `/cek-agen`, `pasang.sh`), `KONSEP_TURBOJET_FRAPPE_RUST.md` |
 | App template | `template/turbojet/` (paket app Frappe), `template/rust/` (crate), `template/bench/`, `template/dev/` (bench Docker) |
 | Ringkasan | `README.md` (monorepo), `template/README.md`, `template/rust/README.md` (status unit, saklar, angka) |
 | Memori | `turbojet-frappe-rust.md` di folder memori proyek |
