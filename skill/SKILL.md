@@ -18,15 +18,19 @@ berlaku umum dikerjakan di template (monorepo `turbojet`, folder `template/`, br
 
 ```bash
 python -I -X utf8 ~/.claude/skills/turbojet/scripts/buat_app.py --judul "Kasir Kapal"                       # -> monorepo apps/kasir_kapal
-python -I -X utf8 ~/.claude/skills/turbojet/scripts/buat_app.py --judul "Kasir Kapal" --tujuan "<folder baru>"  # repo sendiri
+python -I -X utf8 ~/.claude/skills/turbojet/scripts/buat_app.py --judul "Kasir Kapal" --tujuan "<folder baru>"  # repo sendiri, MONOREPO
+python -I -X utf8 ~/.claude/skills/turbojet/scripts/buat_app.py --judul "Kasir Kapal" --tujuan "<folder baru>" --datar  # repo sendiri tanpa monorepo
 # opsi: --repo <monorepo, default C:/Users/alfian/Documents/turbojet> --ref <branch/commit, default main>
 ```
 Skrip mengambil berkas ter-track folder `template/` dari git (`git archive`, jadi .venv/target tak ikut), mengganti
 `turbojet`→`kasir_kapal`, `TurboJet`→`Kasir Kapal` (class `KasirKapalJob`), `TURBOJET`→`KASIR_KAPAL`
 di nama folder, DocType, modul Frappe dan isi teks, memperbarui `root` di `rust-anything.json`, dan
 menyalin modul native apa adanya (`ops_rs`/`split_rs` tetap). Tanya user dulu: judul app dan tujuan — di monorepo (`apps/<nama>`, bawaan)
-atau repo sendiri (`--tujuan`). Setelah itu:
-1. `cd <tujuan> && python -m venv .venv && .venv/Scripts/python -m pip install pytest`, lalu
+atau repo sendiri (`--tujuan`).
+App repo sendiri = MONOREPO (bawaan): `<tujuan>/apps/<nama>/` (app Frappe+engine+rust+dev), `<tujuan>/docs/`
+(+ salinan konsep TurboJet), `<tujuan>/tools/`, README & .gitignore akar; paket lain (UI web, mobile, layanan) masuk
+`apps/<nama>-web`, `apps/<nama>-mobile`, dst. Setelah itu:
+1. `cd <folder app> && python -m venv .venv && .venv/Scripts/python -m pip install pytest`, lalu
    `pytest -q` (harus 59 lulus di `RUST_ANYTHING_MODE=new` dan `old`) dan `python -m <app>.engine ops`.
 2. Ganti contoh: operasi `group_sum`/`preview`, API `create_import_job`, paket free/pro di `install.py`
    sesuai kebutuhan app; unit Rust contoh boleh dibuang (`rust-anything disable`, hapus crate, buang dari

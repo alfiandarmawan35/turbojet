@@ -13,7 +13,8 @@ Template resmi pembuatan aplikasi kita: **Frappe v16 + engine Python/Rust (rust-
 ```bash
 # app baru di monorepo (apps/<nama>) atau di folder lain (--tujuan)
 python -I -X utf8 skill/scripts/buat_app.py --judul "Kasir Kapal"
-python -I -X utf8 skill/scripts/buat_app.py --judul "Kasir Kapal" --tujuan D:/kasir_kapal
+python -I -X utf8 skill/scripts/buat_app.py --judul "Kasir Kapal" --tujuan D:/kasir_kapal          # repo sendiri = monorepo (apps/kasir_kapal, docs/, tools/)
+python -I -X utf8 skill/scripts/buat_app.py --judul "Kasir Kapal" --tujuan D:/kasir_kapal --datar  # tanpa monorepo
 
 # uji template
 cd template && python -m venv .venv && .venv/Scripts/python -m pip install pytest && .venv/Scripts/python -m pytest -q
