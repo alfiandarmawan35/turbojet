@@ -1,0 +1,17 @@
+# Pasang di Pi:  cp tools/pidpos-agen.service ~/.config/systemd/user/ && systemctl --user daemon-reload
+# Linger user ubuntu = yes, jadi tetap jalan tanpa login/laptop dan ikut menyala setelah Pi reboot (bila di-enable).
+[Unit]
+Description=PID POS: Claude Code mandiri menyelesaikan TUGAS_PID_POS_LENGKAP.md
+After=network-online.target 9router.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/work/proyek/pid_pos_tj
+ExecStart=/usr/bin/bash %h/work/proyek/pid_pos_tj/tools/agen_pi.sh
+Restart=on-failure
+RestartSec=300
+Environment=PATH=%h/.local/bin:/usr/local/bin:/usr/bin:/bin
+
+[Install]
+WantedBy=default.target

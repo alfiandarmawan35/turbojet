@@ -3,5 +3,4 @@ __pycache__/
 .venv/
 .pytest_cache/
 *.egg-info/
-rust/*/target/
-rust/*/report/
+node_modules/

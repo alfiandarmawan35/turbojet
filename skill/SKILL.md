@@ -12,19 +12,20 @@ Jawab dalam Bahasa Indonesia.
 
 **Keputusan user 23-11-2026: TurboJet Frappe + Rust adalah satu kesatuan template untuk membuat
 aplikasi kita.** Aplikasi baru dimulai dari template ini (bagian 2a), bukan dari nol. Perbaikan yang
-berlaku umum dikerjakan di template (repo `turbojet`, branch `main`) lalu dibawa ke app turunan.
+berlaku umum dikerjakan di template (monorepo `turbojet`, folder `template/`, branch `main`) lalu dibawa ke app turunan.
 
 ## 2a. Aplikasi baru dari template
 
 ```bash
-python -I -X utf8 ~/.claude/skills/turbojet/scripts/buat_app.py --judul "Kasir Kapal" --tujuan "<folder baru>"
-# opsi: --repo <repo template, default C:/Users/alfian/Documents/turbojet> --ref <branch/commit, default main>
+python -I -X utf8 ~/.claude/skills/turbojet/scripts/buat_app.py --judul "Kasir Kapal"                       # -> monorepo apps/kasir_kapal
+python -I -X utf8 ~/.claude/skills/turbojet/scripts/buat_app.py --judul "Kasir Kapal" --tujuan "<folder baru>"  # repo sendiri
+# opsi: --repo <monorepo, default C:/Users/alfian/Documents/turbojet> --ref <branch/commit, default main>
 ```
-Skrip mengambil berkas ter-track dari git (`git archive`, jadi .venv/target tak ikut), mengganti
+Skrip mengambil berkas ter-track folder `template/` dari git (`git archive`, jadi .venv/target tak ikut), mengganti
 `turbojet`→`kasir_kapal`, `TurboJet`→`Kasir Kapal` (class `KasirKapalJob`), `TURBOJET`→`KASIR_KAPAL`
 di nama folder, DocType, modul Frappe dan isi teks, memperbarui `root` di `rust-anything.json`, dan
-menyalin modul native apa adanya (`ops_rs`/`split_rs` tetap). Tanya user dulu: judul app dan folder/repo
-tujuan (repo sendiri atau di dalam repo yang ada). Setelah itu:
+menyalin modul native apa adanya (`ops_rs`/`split_rs` tetap). Tanya user dulu: judul app dan tujuan — di monorepo (`apps/<nama>`, bawaan)
+atau repo sendiri (`--tujuan`). Setelah itu:
 1. `cd <tujuan> && python -m venv .venv && .venv/Scripts/python -m pip install pytest`, lalu
    `pytest -q` (harus 59 lulus di `RUST_ANYTHING_MODE=new` dan `old`) dan `python -m <app>.engine ops`.
 2. Ganti contoh: operasi `group_sum`/`preview`, API `create_import_job`, paket free/pro di `install.py`
@@ -41,8 +42,9 @@ Teruji 23-11: app "Kasir Kapal" hasil skrip → 59/59 Windows (new & old) + Linu
 | Branch | `main`. Selalu di-push ke origin; cek `git log --oneline -5` |
 | Konsep v2.1 | `KONSEP_TURBOJET_FRAPPE_RUST.md` (akar repo) — baca bagian terkait sebelum mendesain |
 | Skill | `skill/` di repo ini (`SKILL.md`, `scripts/buat_app.py`); `~/.claude/skills/turbojet` = junction ke folder ini, jadi edit skill = edit repo |
-| App | akar repo = app: `turbojet/` (paket app Frappe), `rust/` (crate), `bench/`, `dev/` (bench Docker) |
-| Ringkasan | `README.md`, `rust/README.md` (status unit, saklar, angka) |
+| Monorepo | `template/` (app template), `skill/` (skill ini), `apps/` (app turunan di monorepo), `tools/pi/` (agen mandiri Orange Pi: pelari, systemd, `/cek-pidpos`), `KONSEP_TURBOJET_FRAPPE_RUST.md` |
+| App template | `template/turbojet/` (paket app Frappe), `template/rust/` (crate), `template/bench/`, `template/dev/` (bench Docker) |
+| Ringkasan | `README.md` (monorepo), `template/README.md`, `template/rust/README.md` (status unit, saklar, angka) |
 | Memori | `turbojet-frappe-rust.md` di folder memori proyek |
 
 Bagian app:
@@ -66,8 +68,8 @@ kuota, idempotensi, penyapu). **Belum**: user non-admin, kuota habis, cancel saa
 ## 1. Cek status (selalu dulu)
 
 ```bash
-cd /c/Users/alfian/Documents/turbojet
-git status -sb | head
+cd /c/Users/alfian/Documents/turbojet && git status -sb | head
+cd template
 .venv/Scripts/python -m pytest -q -p no:cacheprovider | tail -1     # harus 59+ passed
 .venv/Scripts/python -m turbojet.engine ops                          # path rust/python per unit
 ```
@@ -99,11 +101,11 @@ Jangan nyatakan selesai sebelum `gate` lulus. Aturan rumah:
 - Jalur panas Python: `io.StringIO(newline="")` lebih cepat dari regex per baris.
 - Saklar: `RUST_ANYTHING_MODE=old|new|shadow`, per unit `RUST_ANYTHING_UNIT_<UNIT>=original`.
 - Uji tes di semua kombinasi saklar; tes jangan mengunci `engine_path=="python"`.
-- Perbarui tabel status di `rust/README.md` dan `registry.describe()` untuk unit baru.
+- Perbarui tabel status di `template/rust/README.md` dan `registry.describe()` untuk unit baru.
 
 ### Build & uji Linux (wajib setelah `port.rs` berubah)
 ```bash
-cd /c/Users/alfian/Documents/turbojet
+cd /c/Users/alfian/Documents/turbojet/template
 bash rust/build_linux.sh            # Docker maturin + cargo +stable → python/<mod>/_native.abi3.so
 bash rust/test_linux.sh             # python:3.11-slim; juga coba python:3.14-slim, python:3.9-bullseye
 ```
@@ -113,7 +115,7 @@ perlu `!python/*/_native.abi3.so` dan `!python/*/_native.pyd` agar modul ikut co
 
 ### Bench Frappe lokal (Docker) — uji setiap perubahan bagian Frappe di sini
 ```bash
-cd <folder app>        # template: C:/Users/alfian/Documents/turbojet
+cd <folder app>        # template: C:/Users/alfian/Documents/turbojet/template
 bash dev/bench.sh up       # erpnext:v16.60.0 + mariadb + redis; site <app>.localhost, install-app, MODE=new
 bash dev/bench.sh smoke    # API end-to-end: preview, idempotensi, job done via rust, CSV salah, list
 docker compose -f dev/docker-compose.yml restart backend worker   # setelah ubah .py

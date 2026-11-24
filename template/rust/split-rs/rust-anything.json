@@ -1,6 +1,6 @@
 {
   "schema": "rust-anything/bridge@1",
-  "root": "C:\\Users\\alfian\\Documents\\turbojet",
+  "root": "C:\\Users\\alfian\\Documents\\turbojet\\template",
   "unit": "turbojet/engine/split/",
   "language": "python",
   "kind": "pyo3",

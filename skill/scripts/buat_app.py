@@ -4,6 +4,7 @@ Sumber diambil dari git (branch template, hanya berkas ter-track), lalu semua na
 ``turbojet``/``TurboJet``/``TURBOJET`` diganti: folder, nama DocType, modul Frappe, isi berkas teks.
 Modul native (.pyd/.so) ikut disalin apa adanya — nama modulnya (ops_rs, split_rs) tidak berubah.
 
+    python buat_app.py --judul "Kasir Kapal"                      # -> <monorepo>/apps/kasir_kapal
     python buat_app.py --judul "Kasir Kapal" --tujuan "C:/.../kasir_kapal"
     python buat_app.py --judul "Kasir Kapal" --tujuan D:/x --repo <repo turbojet> --ref main
 
@@ -21,7 +22,7 @@ import tarfile
 
 DEFAULT_REPO = r"C:\Users\alfian\Documents\turbojet"  # github alfiandarmawan35/turbojet
 DEFAULT_REF = "main"
-SKIP = ("skill/",)  # skill pembuat app tidak ikut ke app turunan
+PREFIX = "template/"  # monorepo: template app ada di folder template/
 BINARY_EXT = {".pyd", ".so", ".png", ".svg", ".ico", ".xlsx", ".pdf"}
 
 
@@ -43,7 +44,7 @@ def rename_text(text, name, title):
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--judul", required=True, help='judul app, mis. "Kasir Kapal"')
-    ap.add_argument("--tujuan", required=True, help="folder app baru (harus belum ada / kosong)")
+    ap.add_argument("--tujuan", help="folder app baru (belum ada / kosong); bawaan <repo>/apps/<nama>")
     ap.add_argument("--repo", default=DEFAULT_REPO)
     ap.add_argument("--ref", default=DEFAULT_REF, help="branch/commit template")
     args = ap.parse_args(argv)
@@ -52,12 +53,12 @@ def main(argv=None):
     name = scrub(title)
     if not re.fullmatch(r"[a-z][a-z0-9_]*", name) or name == "turbojet":
         sys.exit(f"nama app tidak valid: {name!r}")
-    dest = os.path.abspath(args.tujuan)
+    dest = os.path.abspath(args.tujuan or os.path.join(args.repo, "apps", name))
     if os.path.exists(dest) and os.listdir(dest):
         sys.exit(f"folder tujuan sudah berisi: {dest}")
 
     tar_bytes = subprocess.run(
-        ["git", "-C", args.repo, "archive", "--format=tar", args.ref],
+        ["git", "-C", args.repo, "archive", "--format=tar", args.ref, PREFIX],
         check=True, capture_output=True,
     ).stdout
     commit = subprocess.run(
@@ -67,9 +68,9 @@ def main(argv=None):
     count = 0
     with tarfile.open(fileobj=io.BytesIO(tar_bytes)) as tar:
         for member in tar.getmembers():
-            if not member.isfile() or member.name.startswith(SKIP):
+            if not member.isfile():
                 continue
-            rel = member.name
+            rel = member.name[len(PREFIX):]
             rel_new = rename_text(rel, name, title)
             out = os.path.join(dest, *rel_new.split("/"))
             os.makedirs(os.path.dirname(out), exist_ok=True)
