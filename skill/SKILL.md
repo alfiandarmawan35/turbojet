@@ -42,7 +42,7 @@ Teruji 23-11: app "Kasir Kapal" hasil skrip → 59/59 Windows (new & old) + Linu
 
 | Apa | Di mana |
 |---|---|
-| Repo | `C:\Users\alfian\Documents\turbojet` (origin `alfiandarmawan35/turbojet`, privat). Dulu folder `turbojet/` di branch `feature/turbojet` addons_sbi; riwayat dipindah 24-11 |
+| Repo | `C:\Users\alfian\Documents\turbojet` (origin `alfiandarmawan35/turbojet`, publik). Dulu folder `turbojet/` di branch `feature/turbojet` addons_sbi; riwayat dipindah 24-11 |
 | Branch | `main`. Selalu di-push ke origin; cek `git log --oneline -5` |
 | Konsep v2.1 | `KONSEP_TURBOJET_FRAPPE_RUST.md` (akar repo) — baca bagian terkait sebelum mendesain |
 | Skill | `skill/` di repo ini (`SKILL.md`, `scripts/buat_app.py`); `~/.claude/skills/turbojet` = junction ke folder ini, jadi edit skill = edit repo |
